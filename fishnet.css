@@ -431,3 +431,52 @@
   .menu-toggle{display:inline-flex !important}
   .nav-right{gap:8px}
 }
+
+/* ── Dark Mode ── */
+[data-theme="dark"]{
+  --ink:#f0ede8;
+  --ink-soft:#a8a49f;
+  --paper:#0f1117;
+  --paper-alt:#181c24;
+  --line:#2a2e38;
+  --teal:#4dd8c0;
+  --teal-deep:#38b4a0;
+  --shadow-sm:0 1px 4px rgba(0,0,0,.4);
+  --shadow-md:0 6px 24px rgba(0,0,0,.5);
+}
+[data-theme="dark"] body{background:var(--paper);color:var(--ink)}
+[data-theme="dark"] nav{background:rgba(15,17,23,.85);border-bottom:1px solid var(--line)}
+[data-theme="dark"] .nav-links a{color:var(--ink-soft)}
+[data-theme="dark"] .nav-links a:hover{color:var(--ink)}
+[data-theme="dark"] .btn-outline{border-color:var(--line);color:var(--ink)}
+[data-theme="dark"] .btn-primary{background:var(--teal);color:#0f1117}
+[data-theme="dark"] .btn-primary:hover{background:var(--teal-deep)}
+[data-theme="dark"] .card,[data-theme="dark"] .product,[data-theme="dark"] .cert-card{background:var(--paper-alt);border-color:var(--line)}
+[data-theme="dark"] .hero{background:var(--paper)}
+[data-theme="dark"] .stat-bar,[data-theme="dark"] .partners,[data-theme="dark"] .certs-section{background:var(--paper-alt)}
+[data-theme="dark"] .section-alt{background:var(--paper-alt)}
+[data-theme="dark"] footer{background:#080a0f;border-top:1px solid var(--line)}
+[data-theme="dark"] .lang-menu{background:var(--paper-alt);border-color:var(--line)}
+[data-theme="dark"] .lang-btn{color:var(--ink)}
+[data-theme="dark"] .menu-toggle{border-color:var(--line);color:var(--ink)}
+[data-theme="dark"] .partner-mark{color:var(--ink-soft)}
+[data-theme="dark"] .cert-badge{background:var(--paper-alt);border-color:var(--line);color:var(--ink-soft)}
+[data-theme="dark"] .timeline::before{background:var(--line)}
+[data-theme="dark"] input,[data-theme="dark"] textarea,[data-theme="dark"] select{background:var(--paper-alt);border-color:var(--line);color:var(--ink)}
+[data-theme="dark"] .nav-links.mobile-open{background:var(--paper-alt);border-color:var(--line)}
+
+/* ── Theme Toggle Button ── */
+.theme-toggle{
+  display:flex;align-items:center;justify-content:center;
+  width:36px;height:36px;border-radius:8px;
+  border:1px solid var(--line);background:transparent;
+  cursor:pointer;color:var(--ink-soft);
+  transition:color .2s,border-color .2s,background .2s;
+  flex-shrink:0;
+}
+.theme-toggle:hover{color:var(--ink);background:var(--paper-alt);border-color:var(--ink-soft)}
+.theme-toggle svg{width:17px;height:17px;stroke:currentColor;fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.icon-sun{display:none}
+.icon-moon{display:block}
+[data-theme="dark"] .icon-sun{display:block}
+[data-theme="dark"] .icon-moon{display:none}
