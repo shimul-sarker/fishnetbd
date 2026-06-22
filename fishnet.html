@@ -665,7 +665,13 @@
 
   // Nav scroll
   const nav=document.getElementById("nav");
-  window.addEventListener("scroll",()=>nav.classList.toggle("scrolled",window.scrollY>20));
+  let navTicking=false;
+  window.addEventListener("scroll",()=>{
+    if(!navTicking){
+      requestAnimationFrame(()=>{nav.classList.toggle("scrolled",window.scrollY>30);navTicking=false;});
+      navTicking=true;
+    }
+  },{passive:true});
 
   // Mobile menu
   document.getElementById("menuToggle").addEventListener("click",()=>document.getElementById("navLinks").classList.toggle("mobile-open"));

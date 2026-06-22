@@ -20,8 +20,22 @@
       <li><a href="/fishnetbd/pages/certifications.html">Certifications</a></li>
       <li><a href="/fishnetbd/pages/global-presence.html">Global Reach</a></li>
       <li><a href="/fishnetbd/pages/contact.html">Contact</a></li>
+      <li class="btn-cta-mobile" style="display:none"><a href="/fishnetbd/pages/contact.html" class="btn btn-primary" style="width:100%;justify-content:center">Request Quote →</a></li>
     </ul>
     <div class="nav-right">
+      <div class="lang" id="lang">
+        <button class="lang-btn" id="langBtn"><span class="flag" id="langFlag">🇬🇧</span><span id="langLabel">EN</span>
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="lang-menu" id="langMenu">
+          <button data-lang="en" class="active"><span class="flag">🇬🇧</span> English</button>
+          <button data-lang="de"><span class="flag">🇩🇪</span> Deutsch</button>
+          <button data-lang="fr"><span class="flag">🇫🇷</span> Français</button>
+          <button data-lang="es"><span class="flag">🇪🇸</span> Español</button>
+          <button data-lang="it"><span class="flag">🇮🇹</span> Italiano</button>
+          <button data-lang="nl"><span class="flag">🇳🇱</span> Nederlands</button>
+        </div>
+      </div>
       <a href="/fishnetbd/pages/contact.html" class="btn btn-primary">Request Quote
         <svg class="arr" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
       </a>
@@ -117,7 +131,7 @@
         <a href="/fishnetbd/products/black-tiger-shrimp.html">Black Tiger Shrimp</a><a href="/fishnetbd/products/white-fish-fillets.html">White Fish</a><a href="/fishnetbd/products/breaded-marinated.html">Value-added</a><a href="/fishnetbd/products/crab-lobster.html">Crab & Lobster</a>
       </div>
       <div class="foot-col"><h4>Contact</h4>
-        <a href="mailto:info@fishnetbd.com">info@fishnetbd.com</a><a href="tel:+31108001900"></a><a href="/fishnetbd/pages/contact.html">Chittagong, BD</a>
+        <a href="mailto:sales@fishnetbd.com">sales@fishnetbd.com</a><a href="tel:+88041721010">+88041721010</a><a href="/fishnetbd/pages/contact.html">Khulna, BD</a>
       </div>
     </div>
     <div class="foot-bot">
@@ -131,11 +145,32 @@
 </footer>
 <script>
 const nav=document.getElementById('nav');
-window.addEventListener('scroll',()=>{nav.classList.toggle('scrolled',window.scrollY>30)});
+let navTicking=false;window.addEventListener('scroll',()=>{if(!navTicking){requestAnimationFrame(()=>{nav.classList.toggle('scrolled',window.scrollY>30);navTicking=false;});navTicking=true;}},{passive:true});
 const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
 document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
 document.getElementById('menuToggle').addEventListener('click',()=>document.getElementById('navLinks').classList.toggle('mobile-open'));
 document.querySelectorAll('#navLinks a').forEach(a=>a.addEventListener('click',()=>document.getElementById('navLinks').classList.remove('mobile-open')));
+
+  // Language switcher (UI-only on this page; full translations live on the homepage)
+  (function(){
+    const LANG_META={en:["🇬🇧","EN"],de:["🇩🇪","DE"],fr:["🇫🇷","FR"],es:["🇪🇸","ES"],it:["🇮🇹","IT"],nl:["🇳🇱","NL"]};
+    const langEl=document.getElementById('lang');
+    const langBtn=document.getElementById('langBtn');
+    if(!langEl||!langBtn) return;
+    function applyLang(l){
+      const meta=LANG_META[l]||LANG_META.en;
+      document.getElementById('langFlag').textContent=meta[0];
+      document.getElementById('langLabel').textContent=meta[1];
+      document.querySelectorAll('#langMenu button').forEach(b=>b.classList.toggle('active',b.dataset.lang===l));
+      document.documentElement.lang=l;
+      try{localStorage.setItem('lang',l)}catch(e){}
+    }
+    langBtn.addEventListener('click',e=>{e.stopPropagation();langEl.classList.toggle('open')});
+    document.addEventListener('click',()=>langEl.classList.remove('open'));
+    document.querySelectorAll('#langMenu button').forEach(b=>b.addEventListener('click',()=>{applyLang(b.dataset.lang);langEl.classList.remove('open')}));
+    try{const saved=localStorage.getItem('lang');if(saved&&LANG_META[saved])applyLang(saved)}catch(e){}
+  })();
+
 
   // Dark mode toggle
   (function(){
