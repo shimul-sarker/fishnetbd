@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Fishnet — Premium Seafood Exports to Europe</title>
+<meta name="description" content="Fishnet exports premium shrimp, frozen fish and value-added seafood from coastal Bangladesh to importers across the European Union." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/fishnetbd/fishnet.css" />
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav" id="nav">
+  <div class="wrap nav-inner">
+    <a href="#" class="logo">
+      <span class="logo-mark">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12c3-4 7-4 9 0s6 4 9 0"/><path d="M3 18c3-4 7-4 9 0s6 4 9 0"/></svg>
+      </span>
+      Fishnet
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#products" data-i18n="nav.products">Products</a></li>
+      <li><a href="/fishnetbd/pages/about.html">About</a></li>
+      <li><a href="/fishnetbd/pages/sustainability.html">Sustainability</a></li>
+      <li><a href="/fishnetbd/pages/certifications.html">Certifications</a></li>
+      <li><a href="/fishnetbd/pages/global-presence.html">Global Reach</a></li>
+      <li><a href="/fishnetbd/pages/contact.html" data-i18n="nav.contact">Contact</a></li>
+    </ul>
+    <div class="nav-right">
+      <div class="lang" id="lang">
+        <button class="lang-btn" id="langBtn"><span class="flag" id="langFlag">🇬🇧</span><span id="langLabel">EN</span>
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="lang-menu" id="langMenu">
+          <button data-lang="en" class="active"><span class="flag">🇬🇧</span> English</button>
+          <button data-lang="de"><span class="flag">🇩🇪</span> Deutsch</button>
+          <button data-lang="fr"><span class="flag">🇫🇷</span> Français</button>
+          <button data-lang="es"><span class="flag">🇪🇸</span> Español</button>
+          <button data-lang="it"><span class="flag">🇮🇹</span> Italiano</button>
+          <button data-lang="nl"><span class="flag">🇳🇱</span> Nederlands</button>
+        </div>
+      </div>
+      <a href="#contact" class="btn btn-primary" data-i18n="nav.cta">Request Quote
+        <svg class="arr" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      </a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/></svg>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div class="reveal">
+      <span class="eyebrow" data-i18n="hero.eyebrow">Premium Seafood Exporter · Est. 2009</span>
+      <h1 style="margin-top:24px"><span data-i18n="hero.title1">From the Bay of Bengal</span><br/><span data-i18n="hero.title2" style="font-style:italic;color:var(--teal-deep);font-weight:400">to Europe's finest tables.</span></h1>
+      <p class="lede" data-i18n="hero.lede">Fishnet supplies HACCP & BRC-certified shrimp, frozen fish and value-added seafood to wholesalers, retailers and HORECA partners across the European Union.</p>
+      <div class="hero-cta">
+        <a href="#contact" class="btn btn-primary" data-i18n="hero.cta1">Start your order
+          <svg class="arr" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+        <a href="#products" class="btn btn-ghost" data-i18n="hero.cta2">Explore our catalogue</a>
+      </div>
+      <div class="hero-meta">
+        <div><b>27+</b><span data-i18n="hero.m1">Countries served</span></div>
+        <div><b>15K+</b><span data-i18n="hero.m2">Tons / year</span></div>
+        <div><b>BRC AA</b><span data-i18n="hero.m3">Global certified</span></div>
+      </div>
+    </div>
+    <div class="hero-visual reveal">
+      <img src="/fishnetbd/images/hero-seafood.jpg" alt="Premium fresh seafood platter" />
+    </div>
+  </div>
+</section>
+
+<!-- PARTNERS & CERTIFICATIONS -->
+<section class="marquee-section">
+  <div class="wrap">
+    <div class="marquee-label" data-i18n="marquee.label">Trusted by leading European importers &amp; retailers</div>
+    <div class="marquee">
+      <div class="marquee-track" id="marquee">
+        <!-- filled by JS -->
+      </div>
+    </div>
+    <div class="certs-strip">
+      <div class="certs-label">Certifications &amp; Compliance</div>
+      <div class="certs-row" id="certs"><!-- filled by JS --></div>
+    </div>
+  </div>
+</section>
+
+<!-- PRODUCTS -->
+<section class="products" id="products">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow" data-i18n="prod.eyebrow">Our Catalogue</span>
+      <h2 style="margin-top:18px" data-i18n="prod.title">Seafood crafted for premium markets.</h2>
+      <p data-i18n="prod.sub">From wild-caught black tiger shrimp to deep-frozen pelagic fish — every product is processed, packed and shipped under strict European food-safety standards.</p>
+    </div>
+    <div class="product-grid">
+      <a href="/fishnetbd/products/black-tiger-shrimp.html" class="product product-large reveal" style="aspect-ratio:16/10">
+        <img src="/fishnetbd/images/product-black-tiger-shrimp.jpg" alt="Black Tiger Shrimp" />
+        <div class="product-info">
+          <div class="tag" data-i18n="prod.t1">Flagship · Wild-caught</div>
+          <h3 data-i18n="prod.n1">Black Tiger Shrimp</h3>
+          <p data-i18n="prod.d1">Hand-selected, IQF processed within 6 hours of catch. Available in HLSO, PD and PUD cuts.</p>
+        </div>
+      </a>
+      <a href="/fishnetbd/products/white-fish-fillets.html" class="product reveal"><img src="/fishnetbd/images/product-white-fish.jpg" alt="Frozen White Fish" />
+        <div class="product-info">
+          <div class="tag" data-i18n="prod.t2">Frozen · IQF</div>
+          <h3 data-i18n="prod.n2">White Fish Fillets</h3>
+          <p data-i18n="prod.d2">Pangasius, hilsa & rohu fillets — skinless, boneless, vacuum-sealed.</p>
+        </div>
+      </a>
+      <a href="/fishnetbd/products/breaded-marinated.html" class="product reveal"><img src="/fishnetbd/images/product-breaded.jpg" alt="Value Added Seafood" />
+        <div class="product-info">
+          <div class="tag" data-i18n="prod.t3">Value-Added</div>
+          <h3 data-i18n="prod.n3">Breaded & Marinated</h3>
+          <p data-i18n="prod.d3">Retail-ready breaded shrimp, marinated fillets and skewers under your brand.</p>
+        </div>
+      </a>
+      <a href="/fishnetbd/products/crab-lobster.html" class="product reveal"><img src="/fishnetbd/images/product-crab-lobster.jpg" alt="Crab and Lobster" />
+        <div class="product-info">
+          <div class="tag" data-i18n="prod.t4">Specialty</div>
+          <h3 data-i18n="prod.n4">Crab & Lobster</h3>
+          <p data-i18n="prod.d4">Soft-shell crab, mud crab clusters and spiny lobster tails.</p>
+        </div>
+      </a>
+      <a href="/fishnetbd/pages/about.html" class="product brand-card reveal" style="background:linear-gradient(160deg,#0B1F2A 0%,#11313F 55%,#1a4a5c 100%);">
+        <div class="brand-card-inner">
+          <div class="brand-top">
+            <div class="brand-mark">F.</div>
+            <div class="tag" style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.16em;text-transform:uppercase;opacity:.7;color:#fff">Est. 2009</div>
+          </div>
+          <h3 class="brand-quote">"From the Bay of Bengal to European kitchens — traceable, sustainable, uncompromised."</h3>
+          <div class="brand-foot">
+            <div class="brand-certs">HACCP · BRC · MSC · EU-Approved</div>
+            <span class="brand-cta">Our Story <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          </div>
+        </div>
+      </a>
+      <a href="/fishnetbd/products/squid-cuttlefish.html" class="product product-large reveal" style="aspect-ratio:16/10">
+        <img src="/fishnetbd/images/squid-hero.jpg" alt="Squid, Cuttlefish & Octopus" />
+        <div class="product-info">
+          <div class="tag" data-i18n="prod.t5">Cephalopods</div>
+          <h3 data-i18n="prod.n5">Squid, Cuttlefish & Octopus</h3>
+          <p data-i18n="prod.d5">Cleaned tubes, rings and whole specimens — perfect for Mediterranean cuisine.</p>
+        </div>
+      </a>
+      <a href="/fishnetbd/products/white-fish-fillets.html" class="product reveal">
+        <img src="/fishnetbd/images/hero-seafood.jpg" alt="Hilsa & Pelagic Fish" />
+        <div class="product-info">
+          <div class="tag" data-i18n="prod.t6">Signature · Bay of Bengal</div>
+          <h3 data-i18n="prod.n6">Hilsa & Pelagic Fish</h3>
+          <p data-i18n="prod.d6">Wild-caught hilsa, mackerel and sardines — flash-frozen at peak freshness.</p>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- WHY -->
+<section class="why" id="why">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow" data-i18n="why.eyebrow">Why Fishnet</span>
+      <h2 style="margin-top:18px" data-i18n="why.title">A partner European buyers can rely on.</h2>
+      <p data-i18n="why.sub">Three decades of coastal expertise meet modern processing and an obsessive standard of traceability.</p>
+    </div>
+    <div class="why-grid">
+      <div class="why-card reveal">
+        <div class="why-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+        <h3 data-i18n="why.t1">EU-grade certifications</h3>
+        <p data-i18n="why.d1">BRCGS AA, IFS, HACCP, ASC, BAP and EU-approved establishment number EC-BD-145.</p>
+      </div>
+      <div class="why-card reveal">
+        <div class="why-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg></div>
+        <h3 data-i18n="why.t2">End-to-end traceability</h3>
+        <p data-i18n="why.d2">Every carton carries a QR code traceable from the farm or fishing vessel to your loading dock.</p>
+      </div>
+      <div class="why-card reveal">
+        <div class="why-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+        <h3 data-i18n="why.t3">On-time, every time</h3>
+        <p data-i18n="why.d3">99.4% on-time shipping with weekly reefer departures from Chittagong to Rotterdam, Hamburg & Algeciras.</p>
+      </div>
+      <div class="why-card reveal">
+        <div class="why-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 7L9 18l-5-5"/></svg></div>
+        <h3 data-i18n="why.t4">Sustainable sourcing</h3>
+        <p data-i18n="why.d4">We work only with ASC-certified farms and fisheries operating under strict quotas and bycatch controls.</p>
+      </div>
+      <div class="why-card reveal">
+        <div class="why-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="8.5" cy="7" r="4"/><path d="M20 8v6M23 11h-6"/></svg></div>
+        <h3 data-i18n="why.t5">Private label & co-pack</h3>
+        <p data-i18n="why.d5">Bespoke packaging, retail-ready cartons and full private-label development with our design team.</p>
+      </div>
+      <div class="why-card reveal">
+        <div class="why-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div>
+        <h3 data-i18n="why.t6">Dedicated EU office</h3>
+        <p data-i18n="why.d6">Local account managers in Rotterdam serve our European buyers in their own time zone and language.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="process" id="process">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow" data-i18n="proc.eyebrow">How we work</span>
+      <h2 style="margin-top:18px" data-i18n="proc.title">From coastal water to your warehouse.</h2>
+      <p data-i18n="proc.sub">A transparent four-step process designed for European importers who value precision.</p>
+    </div>
+    <div class="timeline">
+      <div class="step">
+        <div class="dot"></div>
+        <div class="step-num">01 / Sourcing</div>
+        <h3 data-i18n="proc.t1">Selective harvesting</h3>
+        <p data-i18n="proc.d1">Our network of 240+ vetted farms and 12 deep-sea vessels supply only catches that meet our size, freshness and sustainability criteria.</p>
+      </div>
+      <div class="step">
+        <div class="dot"></div>
+        <div class="step-num">02 / Processing</div>
+        <h3 data-i18n="proc.t2">EU-compliant processing</h3>
+        <p data-i18n="proc.d2">Two BRC AA plants with IQF tunnels, automated grading lines and on-site QC labs that test every batch against EU 853/2004.</p>
+      </div>
+      <div class="step">
+        <div class="dot"></div>
+        <div class="step-num">03 / Logistics</div>
+        <h3 data-i18n="proc.t3">Unbroken cold chain</h3>
+        <p data-i18n="proc.d3">−18 °C reefer containers leave Chittagong weekly. Live temperature data is shared with your team in real time.</p>
+      </div>
+      <div class="step">
+        <div class="dot"></div>
+        <div class="step-num">04 / Delivery</div>
+        <h3 data-i18n="proc.t4">DDP into your facility</h3>
+        <p data-i18n="proc.d4">We handle EU customs, veterinary inspection and last-mile delivery — you simply receive perfect product at your dock.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GLOBAL -->
+<section class="global" id="global">
+  <div class="wrap global-grid">
+    <div class="reveal">
+      <span class="eyebrow" data-i18n="glb.eyebrow">Global presence</span>
+      <h2 style="margin-top:18px" data-i18n="glb.title">Shipping to 27 countries, anchored in Europe.</h2>
+      <p class="lede" data-i18n="glb.sub">From our European hub in Rotterdam, we serve premium retailers and distributors across the EU, UK and Scandinavia — with weekly direct sailings and air-freight for fresh categories.</p>
+      <div class="global-stats">
+        <div class="gs"><b>27</b><span data-i18n="glb.s1">Active countries</span></div>
+        <div class="gs"><b>18</b><span data-i18n="glb.s2">EU member states</span></div>
+        <div class="gs"><b>14 days</b><span data-i18n="glb.s3">Sea to Rotterdam</span></div>
+        <div class="gs"><b>48 h</b><span data-i18n="glb.s4">Air to any EU capital</span></div>
+      </div>
+    </div>
+    <div class="map-card reveal">
+      <div class="map-wrap">
+        <svg viewBox="0 0 500 400" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <radialGradient id="g1" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#3FBFC9" stop-opacity=".25"/><stop offset="100%" stop-color="#3FBFC9" stop-opacity="0"/></radialGradient>
+          </defs>
+          <rect width="500" height="400" fill="#0a1a23"/>
+          <circle cx="250" cy="180" r="160" fill="url(#g1)"/>
+          <!-- Simplified Europe blob -->
+          <path d="M180 100 q40 -30 90 -20 q60 12 90 50 q20 35 -10 75 q-30 45 -90 50 q-65 6 -100 -30 q-25 -30 -20 -70 q5 -35 40 -55z" fill="#13303d" stroke="#1d4252" stroke-width="1"/>
+          <!-- South Asia blob (origin) -->
+          <path d="M380 250 q15 -10 30 -2 q12 8 5 20 q-10 15 -25 12 q-15 -3 -15 -18 q0 -8 5 -12z" fill="#13303d" stroke="#1d4252" stroke-width="1"/>
+          <!-- Connections from origin (Bangladesh approx 410,260) to European cities -->
+          <g stroke="#3FBFC9" stroke-width="1" fill="none" stroke-dasharray="4 4" opacity=".55">
+            <path d="M410 260 Q300 140 230 130"/>
+            <path d="M410 260 Q310 180 260 160"/>
+            <path d="M410 260 Q320 200 280 185"/>
+            <path d="M410 260 Q340 220 300 200"/>
+            <path d="M410 260 Q330 160 220 150"/>
+          </g>
+        </svg>
+        <!-- pins -->
+        <div class="pin" style="left:46%;top:32%"></div>
+        <div class="pin" style="left:52%;top:40%"></div>
+        <div class="pin" style="left:56%;top:46%"></div>
+        <div class="pin" style="left:60%;top:50%"></div>
+        <div class="pin" style="left:44%;top:38%"></div>
+        <div class="pin" style="left:82%;top:65%;background:var(--gold);box-shadow:0 0 0 4px rgba(200,162,75,.25)"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<section class="stats">
+  <div class="wrap">
+    <div class="stats-grid">
+      <div class="stat reveal"><b data-count="27">0</b><span data-i18n="st.1">Countries served</span></div>
+      <div class="stat reveal"><b data-count="15000" data-suffix="+">0</b><span data-i18n="st.2">Tons exported / year</span></div>
+      <div class="stat reveal"><b data-count="99" data-suffix="%">0</b><span data-i18n="st.3">On-time shipments</span></div>
+      <div class="stat reveal"><b data-count="240" data-suffix="+">0</b><span data-i18n="st.4">Vetted source farms</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow" data-i18n="ts.eyebrow">What our partners say</span>
+      <h2 style="margin-top:18px" data-i18n="ts.title">Trusted by Europe's most demanding buyers.</h2>
+    </div>
+    <div class="test-grid">
+      <div class="test-card reveal">
+        <div class="quote-mark">“</div>
+        <p data-i18n="ts.q1">Fishnet has been our most consistent shrimp supplier for six years. Their documentation, temperature logs and packaging are simply the cleanest we receive from Asia.</p>
+        <div class="test-author">
+          <img class="avatar" src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=160&q=80" alt="" />
+          <div><b>Lukas Vermeer</b><span data-i18n="ts.r1">Purchasing Director · Rotterdam Seafood Group</span></div>
+        </div>
+      </div>
+      <div class="test-card reveal">
+        <div class="quote-mark">“</div>
+        <p data-i18n="ts.q2">From quotation to DDP delivery in Hamburg — the entire process feels like working with a European partner, not an overseas supplier. Truly premium service.</p>
+        <div class="test-author">
+          <img class="avatar" src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=160&q=80" alt="" />
+          <div><b>Sophie Bauer</b><span data-i18n="ts.r2">Category Manager · NordMeer GmbH</span></div>
+        </div>
+      </div>
+      <div class="test-card reveal">
+        <div class="quote-mark">“</div>
+        <p data-i18n="ts.q3">Their private-label breaded shrimp now sits in 380 of our stores. Quality has been impeccable and the relationship genuinely transparent.</p>
+        <div class="test-author">
+          <img class="avatar" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=160&q=80" alt="" />
+          <div><b>Marco Ricci</b><span data-i18n="ts.r3">Head of Frozen · Mercato Italia</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact quote-soft" id="contact">
+  <div class="wrap"><div class="quote-card reveal">
+    <div class="reveal">
+      <span class="eyebrow" data-i18n="ct.eyebrow">Get in touch</span>
+      <h2 style="margin-top:18px" data-i18n="ct.title">Let's discuss your next container.</h2>
+      <p class="lede" data-i18n="ct.sub">Send us your specifications. Our European desk replies within one business day with samples, pricing and full documentation.</p>
+      <div class="contact-info">
+        <div class="ci">
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+          <div><b data-i18n="ct.l1">European office</b><span>Wilhelminakade 909, 3072 AP Rotterdam, NL</span></div>
+        </div>
+        <div class="ci">
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
+          <div><b data-i18n="ct.l2">Sales</b><span>sales@fishnet.eu</span></div>
+        </div>
+        <div class="ci">
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
+          <div><b data-i18n="ct.l3">Phone</b><span>+31 10 800 1900</span></div>
+        </div>
+      </div>
+    </div>
+    <form class="reveal" onsubmit="event.preventDefault();this.querySelector('button').innerText='✓  Sent — we will reply shortly'">
+      <div class="row">
+        <div class="field"><label data-i18n="ct.f1">First name</label><input required placeholder="Jane" /></div>
+        <div class="field"><label data-i18n="ct.f2">Last name</label><input required placeholder="Doe" /></div>
+      </div>
+      <div class="row">
+        <div class="field"><label data-i18n="ct.f3">Work email</label><input type="email" required placeholder="jane@company.com" /></div>
+        <div class="field"><label data-i18n="ct.f4">Company</label><input required placeholder="Your company" /></div>
+      </div>
+      <div class="row">
+        <div class="field"><label data-i18n="ct.f5">Country</label>
+          <select>
+            <option>Netherlands</option><option>Germany</option><option>France</option><option>Spain</option><option>Italy</option><option>Belgium</option><option>United Kingdom</option><option>Other EU</option>
+          </select>
+        </div>
+        <div class="field"><label data-i18n="ct.f6">Interested in</label>
+          <select>
+            <option>Black Tiger Shrimp</option><option>White Fish Fillets</option><option>Value-Added Seafood</option><option>Crab & Lobster</option><option>Squid & Cuttlefish</option><option>Private Label</option>
+          </select>
+        </div>
+      </div>
+      <div class="field"><label data-i18n="ct.f7">Message</label><textarea placeholder="Volumes, packaging, target delivery month…"></textarea></div>
+      <button class="btn btn-primary" type="submit" data-i18n="ct.send">Send enquiry
+        <svg class="arr" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      </button>
+    </form>
+  </div>
+</div></section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a href="#" class="logo">
+          <span class="partner-mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12c3-4 7-4 9 0s6 4 9 0"/><path d="M3 18c3-4 7-4 9 0s6 4 9 0"/></svg></span>
+          Fishnet
+        </a>
+        <p data-i18n="ft.desc">Premium seafood exports from the Bay of Bengal to Europe's most discerning buyers. EU-certified. Sustainably sourced. Reliably delivered.</p>
+      </div>
+      <div class="foot-col">
+        <h4 data-i18n="ft.h1">Company</h4>
+        <a href="/fishnetbd/pages/about.html">About</a><a href="/fishnetbd/pages/sustainability.html">Sustainability</a><a href="/fishnetbd/pages/global-presence.html">Global reach</a><a href="/fishnetbd/pages/news.html">News</a>
+      </div>
+      <div class="foot-col">
+        <h4 data-i18n="ft.h2">Products</h4>
+        <a href="/fishnetbd/products/black-tiger-shrimp.html">Black Tiger Shrimp</a><a href="/fishnetbd/products/white-fish-fillets.html">White Fish</a><a href="/fishnetbd/products/breaded-marinated.html">Value-added</a><a href="/fishnetbd/products/crab-lobster.html">Crab & Lobster</a>
+      </div>
+      <div class="foot-col">
+        <h4 data-i18n="ft.h3">Contact</h4>
+        <a href="mailto:sales@fishnet.eu">sales@fishnet.eu</a><a href="tel:+31108001900">+31 10 800 1900</a><a href="#">Rotterdam, NL</a>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <div>© 2025 Fishnet Seafoods B.V. — <span data-i18n="ft.rights">All rights reserved.</span></div>
+      <div class="socials">
+        <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 0H5a5 5 0 0 0-5 5v14a5 5 0 0 0 5 5h14a5 5 0 0 0 5-5V5a5 5 0 0 0-5-5zM8 19H5V8h3v11zM6.5 6.7a1.8 1.8 0 1 1 0-3.6 1.8 1.8 0 0 1 0 3.6zM20 19h-3v-5.6c0-1.4-.5-2.3-1.7-2.3-1 0-1.5.6-1.7 1.3-.1.2-.1.5-.1.8V19h-3V8h3v1.3c.4-.6 1.1-1.5 2.8-1.5 2 0 3.7 1.3 3.7 4.1V19z"/></svg></a>
+        <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></a>
+        <a href="#" aria-label="X"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2H21.5l-7.45 8.51L23 22h-6.844l-5.357-7.01L4.7 22H1.44l7.97-9.1L1 2h7.013l4.844 6.4L18.244 2z"/></svg></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // ===== Translations =====
+  const I18N = {
+    en:{
+      "nav.products":"Products","nav.why":"Why Fishnet","nav.process":"Process","nav.global":"Global Reach","nav.contact":"Contact","nav.cta":"Request Quote",
+      "hero.eyebrow":"Premium Seafood Exporter · Est. 2009","hero.title1":"From the Bay of Bengal","hero.title2":"to Europe's finest tables.","hero.lede":"Fishnet supplies HACCP & BRC-certified shrimp, frozen fish and value-added seafood to wholesalers, retailers and HORECA partners across the European Union.","hero.cta1":"Start your order","hero.cta2":"Explore our catalogue","hero.m1":"Countries served","hero.m2":"Tons / year","hero.m3":"Global certified",
+      "marquee.label":"Trusted by importers across",
+      "prod.eyebrow":"Our Catalogue","prod.title":"Seafood crafted for premium markets.","prod.sub":"From wild-caught black tiger shrimp to deep-frozen pelagic fish — every product is processed, packed and shipped under strict European food-safety standards.",
+      "prod.t1":"Flagship · Wild-caught","prod.n1":"Black Tiger Shrimp","prod.d1":"Hand-selected, IQF processed within 6 hours of catch. Available in HLSO, PD and PUD cuts.",
+      "prod.t2":"Frozen · IQF","prod.n2":"White Fish Fillets","prod.d2":"Pangasius, hilsa & rohu fillets — skinless, boneless, vacuum-sealed.",
+      "prod.t3":"Value-Added","prod.n3":"Breaded & Marinated","prod.d3":"Retail-ready breaded shrimp, marinated fillets and skewers under your brand.",
+      "prod.t4":"Specialty","prod.n4":"Crab & Lobster","prod.d4":"Soft-shell crab, mud crab clusters and spiny lobster tails.",
+      "prod.t5":"Cephalopods","prod.n5":"Squid, Cuttlefish & Octopus","prod.d5":"Cleaned tubes, rings and whole specimens — perfect for Mediterranean cuisine.",
+      "why.eyebrow":"Why Fishnet","why.title":"A partner European buyers can rely on.","why.sub":"Three decades of coastal expertise meet modern processing and an obsessive standard of traceability.",
+      "why.t1":"EU-grade certifications","why.d1":"BRCGS AA, IFS, HACCP, ASC, BAP and EU-approved establishment number EC-BD-145.",
+      "why.t2":"End-to-end traceability","why.d2":"Every carton carries a QR code traceable from the farm or fishing vessel to your loading dock.",
+      "why.t3":"On-time, every time","why.d3":"99.4% on-time shipping with weekly reefer departures from Chittagong to Rotterdam, Hamburg & Algeciras.",
+      "why.t4":"Sustainable sourcing","why.d4":"We work only with ASC-certified farms and fisheries operating under strict quotas and bycatch controls.",
+      "why.t5":"Private label & co-pack","why.d5":"Bespoke packaging, retail-ready cartons and full private-label development with our design team.",
+      "why.t6":"Dedicated EU office","why.d6":"Local account managers in Rotterdam serve our European buyers in their own time zone and language.",
+      "proc.eyebrow":"How we work","proc.title":"From coastal water to your warehouse.","proc.sub":"A transparent four-step process designed for European importers who value precision.",
+      "proc.t1":"Selective harvesting","proc.d1":"Our network of 240+ vetted farms and 12 deep-sea vessels supply only catches that meet our size, freshness and sustainability criteria.",
+      "proc.t2":"EU-compliant processing","proc.d2":"Two BRC AA plants with IQF tunnels, automated grading lines and on-site QC labs that test every batch against EU 853/2004.",
+      "proc.t3":"Unbroken cold chain","proc.d3":"−18 °C reefer containers leave Chittagong weekly. Live temperature data is shared with your team in real time.",
+      "proc.t4":"DDP into your facility","proc.d4":"We handle EU customs, veterinary inspection and last-mile delivery — you simply receive perfect product at your dock.",
+      "glb.eyebrow":"Global presence","glb.title":"Shipping to 27 countries, anchored in Europe.","glb.sub":"From our European hub in Rotterdam, we serve premium retailers and distributors across the EU, UK and Scandinavia — with weekly direct sailings and air-freight for fresh categories.",
+      "glb.s1":"Active countries","glb.s2":"EU member states","glb.s3":"Sea to Rotterdam","glb.s4":"Air to any EU capital",
+      "st.1":"Countries served","st.2":"Tons exported / year","st.3":"On-time shipments","st.4":"Vetted source farms",
+      "ts.eyebrow":"What our partners say","ts.title":"Trusted by Europe's most demanding buyers.",
+      "ts.q1":"Fishnet has been our most consistent shrimp supplier for six years. Their documentation, temperature logs and packaging are simply the cleanest we receive from Asia.","ts.r1":"Purchasing Director · Rotterdam Seafood Group",
+      "ts.q2":"From quotation to DDP delivery in Hamburg — the entire process feels like working with a European partner, not an overseas supplier. Truly premium service.","ts.r2":"Category Manager · NordMeer GmbH",
+      "ts.q3":"Their private-label breaded shrimp now sits in 380 of our stores. Quality has been impeccable and the relationship genuinely transparent.","ts.r3":"Head of Frozen · Mercato Italia",
+      "ct.eyebrow":"Get in touch","ct.title":"Let's discuss your next container.","ct.sub":"Send us your specifications. Our European desk replies within one business day with samples, pricing and full documentation.",
+      "ct.l1":"European office","ct.l2":"Sales","ct.l3":"Phone",
+      "ct.f1":"First name","ct.f2":"Last name","ct.f3":"Work email","ct.f4":"Company","ct.f5":"Country","ct.f6":"Interested in","ct.f7":"Message","ct.send":"Send enquiry",
+      "ft.desc":"Premium seafood exports from the Bay of Bengal to Europe's most discerning buyers. EU-certified. Sustainably sourced. Reliably delivered.",
+      "ft.h1":"Company","ft.h2":"Products","ft.h3":"Contact","ft.rights":"All rights reserved."
+    },
+    de:{
+      "nav.products":"Produkte","nav.why":"Warum Fishnet","nav.process":"Prozess","nav.global":"Weltweit","nav.contact":"Kontakt","nav.cta":"Angebot anfragen",
+      "hero.eyebrow":"Premium-Meeresfrüchte-Exporteur · seit 2009","hero.title1":"Vom Golf von Bengalen","hero.title2":"auf Europas feinste Tische.","hero.lede":"Fishnet liefert HACCP- und BRC-zertifizierte Garnelen, Tiefkühlfisch und veredelte Meeresfrüchte an Großhändler, Einzelhändler und HORECA-Partner in der gesamten EU.","hero.cta1":"Bestellung starten","hero.cta2":"Katalog ansehen","hero.m1":"Belieferte Länder","hero.m2":"Tonnen / Jahr","hero.m3":"Global zertifiziert",
+      "marquee.label":"Vertraut von Importeuren in",
+      "prod.eyebrow":"Unser Katalog","prod.title":"Meeresfrüchte für anspruchsvolle Märkte.","prod.sub":"Von wild gefangenen Tigergarnelen bis zu tiefgefrorenem Pelagik-Fisch – alle Produkte werden nach strengen EU-Lebensmittelstandards verarbeitet und versandt.",
+      "prod.t1":"Flaggschiff · Wildfang","prod.n1":"Black-Tiger-Garnelen","prod.d1":"Handverlesen, IQF-verarbeitet binnen 6 Stunden nach dem Fang. HLSO-, PD- und PUD-Schnitte.",
+      "prod.t2":"Tiefgekühlt · IQF","prod.n2":"Weißfisch-Filets","prod.d2":"Pangasius-, Hilsa- und Rohu-Filets – ohne Haut, ohne Gräten, vakuumiert.",
+      "prod.t3":"Veredelt","prod.n3":"Paniert & Mariniert","prod.d3":"Verkaufsfertige panierte Garnelen, marinierte Filets und Spieße unter Ihrer Marke.",
+      "prod.t4":"Spezialitäten","prod.n4":"Krabben & Hummer","prod.d4":"Weichschalenkrabben, Schlammkrabben-Cluster und Languste-Schwänze.",
+      "prod.t5":"Kopffüßer","prod.n5":"Tintenfisch, Sepia & Oktopus","prod.d5":"Gereinigte Tuben, Ringe und ganze Tiere – perfekt für mediterrane Küche.",
+      "why.eyebrow":"Warum Fishnet","why.title":"Ein Partner, auf den europäische Käufer zählen können.","why.sub":"Drei Jahrzehnte Küstenexpertise treffen auf moderne Verarbeitung und kompromisslose Rückverfolgbarkeit.",
+      "why.t1":"EU-Zertifizierungen","why.d1":"BRCGS AA, IFS, HACCP, ASC, BAP und EU-zugelassene Betriebsnummer EC-BD-145.",
+      "why.t2":"Lückenlose Rückverfolgbarkeit","why.d2":"Jeder Karton trägt einen QR-Code, der von der Farm oder dem Schiff bis zu Ihrer Laderampe rückverfolgbar ist.",
+      "why.t3":"Pünktlich, jedes Mal","why.d3":"99,4 % pünktliche Lieferungen mit wöchentlichen Reefer-Abfahrten nach Rotterdam, Hamburg und Algeciras.",
+      "why.t4":"Nachhaltige Beschaffung","why.d4":"Wir arbeiten nur mit ASC-zertifizierten Farmen und Fischereien mit strengen Quoten und Beifangkontrolle.",
+      "why.t5":"Eigenmarke & Co-Pack","why.d5":"Maßgeschneiderte Verpackungen, regalfertige Kartons und vollständige Eigenmarken-Entwicklung mit unserem Designteam.",
+      "why.t6":"Eigenes EU-Büro","why.d6":"Lokale Account-Manager in Rotterdam betreuen europäische Käufer in ihrer Zeitzone und Sprache.",
+      "proc.eyebrow":"So arbeiten wir","proc.title":"Vom Küstenwasser bis in Ihr Lager.","proc.sub":"Ein transparenter Vier-Schritte-Prozess für europäische Importeure, die Präzision schätzen.",
+      "proc.t1":"Selektiver Fang","proc.d1":"Unser Netzwerk aus 240+ geprüften Farmen und 12 Hochseefischern liefert nur Fänge nach unseren Qualitätsstandards.",
+      "proc.t2":"EU-konforme Verarbeitung","proc.d2":"Zwei BRC-AA-Werke mit IQF-Tunneln, automatischen Sortierlinien und QC-Laboren, die jede Charge gemäß EU 853/2004 prüfen.",
+      "proc.t3":"Ungebrochene Kühlkette","proc.d3":"Wöchentlich verlassen −18 °C-Reefer Chittagong. Live-Temperaturdaten in Echtzeit für Ihr Team.",
+      "proc.t4":"DDP bis zu Ihrem Werk","proc.d4":"Wir übernehmen EU-Zoll, Veterinärinspektion und die letzte Meile – Sie empfangen einfach perfekte Ware.",
+      "glb.eyebrow":"Globale Präsenz","glb.title":"Versand in 27 Länder, verankert in Europa.","glb.sub":"Von unserem europäischen Hub in Rotterdam beliefern wir Premium-Händler in der EU, UK und Skandinavien – mit wöchentlichen Direktverbindungen und Luftfracht.",
+      "glb.s1":"Aktive Länder","glb.s2":"EU-Mitgliedstaaten","glb.s3":"Seeweg nach Rotterdam","glb.s4":"Luftfracht in jede EU-Hauptstadt",
+      "st.1":"Belieferte Länder","st.2":"Tonnen / Jahr","st.3":"Pünktliche Lieferungen","st.4":"Geprüfte Quellfarmen",
+      "ts.eyebrow":"Was unsere Partner sagen","ts.title":"Vertraut von Europas anspruchsvollsten Käufern.",
+      "ts.q1":"Fishnet ist seit sechs Jahren unser konstantester Garnelenlieferant. Dokumentation, Temperaturprotokolle und Verpackung sind die saubersten aus Asien.","ts.r1":"Einkaufsleiter · Rotterdam Seafood Group",
+      "ts.q2":"Von der Quotierung bis zur DDP-Lieferung in Hamburg – wie ein europäischer Partner, nicht wie ein Übersee-Lieferant. Wirklich Premium-Service.","ts.r2":"Category Manager · NordMeer GmbH",
+      "ts.q3":"Ihre Eigenmarken-Garnelen liegen jetzt in 380 unserer Filialen. Tadellose Qualität und transparente Zusammenarbeit.","ts.r3":"Leiter Tiefkühl · Mercato Italia",
+      "ct.eyebrow":"Kontakt aufnehmen","ct.title":"Sprechen wir über Ihren nächsten Container.","ct.sub":"Senden Sie uns Ihre Spezifikationen. Unser europäisches Team antwortet binnen eines Werktages mit Mustern, Preisen und Unterlagen.",
+      "ct.l1":"Europäisches Büro","ct.l2":"Vertrieb","ct.l3":"Telefon",
+      "ct.f1":"Vorname","ct.f2":"Nachname","ct.f3":"Geschäftliche E-Mail","ct.f4":"Unternehmen","ct.f5":"Land","ct.f6":"Interesse an","ct.f7":"Nachricht","ct.send":"Anfrage senden",
+      "ft.desc":"Premium-Meeresfrüchte-Exporte vom Golf von Bengalen an Europas anspruchsvollste Käufer. EU-zertifiziert. Nachhaltig. Zuverlässig.",
+      "ft.h1":"Unternehmen","ft.h2":"Produkte","ft.h3":"Kontakt","ft.rights":"Alle Rechte vorbehalten."
+    },
+    fr:{
+      "nav.products":"Produits","nav.why":"Pourquoi Fishnet","nav.process":"Processus","nav.global":"International","nav.contact":"Contact","nav.cta":"Demander un devis",
+      "hero.eyebrow":"Exportateur de fruits de mer premium · Depuis 2009","hero.title1":"Du golfe du Bengale","hero.title2":"aux meilleures tables d'Europe.","hero.lede":"Fishnet fournit des crevettes, poissons surgelés et produits transformés certifiés HACCP & BRC aux grossistes, distributeurs et CHR à travers toute l'Union européenne.","hero.cta1":"Démarrer votre commande","hero.cta2":"Explorer le catalogue","hero.m1":"Pays desservis","hero.m2":"Tonnes / an","hero.m3":"Certifié mondial",
+      "marquee.label":"Approuvé par les importateurs de",
+      "prod.eyebrow":"Notre catalogue","prod.title":"Des fruits de mer pour les marchés exigeants.","prod.sub":"De la crevette tigrée sauvage au poisson pélagique surgelé — chaque produit est transformé et expédié selon les normes sanitaires européennes.",
+      "prod.t1":"Phare · Pêche sauvage","prod.n1":"Crevettes Black Tiger","prod.d1":"Triées à la main, IQF en moins de 6 h après pêche. Disponibles en HLSO, PD et PUD.",
+      "prod.t2":"Surgelé · IQF","prod.n2":"Filets de poisson blanc","prod.d2":"Pangasius, hilsa et rohu — sans peau, sans arêtes, sous vide.",
+      "prod.t3":"Transformé","prod.n3":"Pané & mariné","prod.d3":"Crevettes panées prêtes à vendre, filets et brochettes marinés sous votre marque.",
+      "prod.t4":"Spécialités","prod.n4":"Crabe & homard","prod.d4":"Crabe mou, clusters de crabe de boue et queues de langouste.",
+      "prod.t5":"Céphalopodes","prod.n5":"Calamar, seiche & poulpe","prod.d5":"Tubes nettoyés, anneaux et spécimens entiers — parfaits pour la cuisine méditerranéenne.",
+      "why.eyebrow":"Pourquoi Fishnet","why.title":"Un partenaire fiable pour les acheteurs européens.","why.sub":"Trois décennies d'expertise côtière, une transformation moderne et une traçabilité sans compromis.",
+      "why.t1":"Certifications UE","why.d1":"BRCGS AA, IFS, HACCP, ASC, BAP et numéro d'agrément UE EC-BD-145.",
+      "why.t2":"Traçabilité complète","why.d2":"Chaque carton porte un QR code traçable de la ferme ou du navire jusqu'à votre quai.",
+      "why.t3":"À l'heure, à chaque fois","why.d3":"99,4 % de livraisons à l'heure avec départs reefer hebdomadaires vers Rotterdam, Hambourg et Algésiras.",
+      "why.t4":"Approvisionnement durable","why.d4":"Uniquement des fermes et pêcheries certifiées ASC sous quotas stricts et contrôle des prises accessoires.",
+      "why.t5":"Marque propre & co-pack","why.d5":"Packaging sur mesure, cartons prêts à vendre et développement complet de marque propre.",
+      "why.t6":"Bureau UE dédié","why.d6":"Nos chargés de compte à Rotterdam servent les acheteurs européens dans leur fuseau horaire et leur langue.",
+      "proc.eyebrow":"Notre méthode","proc.title":"De l'eau côtière à votre entrepôt.","proc.sub":"Un processus transparent en quatre étapes pour les importateurs européens exigeants.",
+      "proc.t1":"Pêche sélective","proc.d1":"Notre réseau de 240+ fermes vérifiées et 12 navires hauturiers ne fournit que les meilleurs lots.",
+      "proc.t2":"Transformation UE","proc.d2":"Deux usines BRC AA avec tunnels IQF, lignes de calibrage et laboratoires QC conformes à l'EU 853/2004.",
+      "proc.t3":"Chaîne du froid intacte","proc.d3":"Conteneurs reefer à −18 °C au départ hebdomadaire de Chittagong. Données de température en temps réel.",
+      "proc.t4":"DDP à votre site","proc.d4":"Nous gérons la douane UE, l'inspection vétérinaire et la livraison finale — vous recevez un produit parfait.",
+      "glb.eyebrow":"Présence mondiale","glb.title":"27 pays desservis, ancrés en Europe.","glb.sub":"Depuis notre hub européen de Rotterdam, nous servons les distributeurs premium en UE, Royaume-Uni et Scandinavie.",
+      "glb.s1":"Pays actifs","glb.s2":"États membres UE","glb.s3":"Mer vers Rotterdam","glb.s4":"Air vers toute capitale UE",
+      "st.1":"Pays desservis","st.2":"Tonnes exportées / an","st.3":"Livraisons à l'heure","st.4":"Fermes vérifiées",
+      "ts.eyebrow":"Ce que disent nos partenaires","ts.title":"Choisi par les acheteurs européens les plus exigeants.",
+      "ts.q1":"Fishnet est notre fournisseur de crevettes le plus régulier depuis six ans. Documentation et emballage irréprochables.","ts.r1":"Directeur des achats · Rotterdam Seafood Group",
+      "ts.q2":"De la cotation à la livraison DDP à Hambourg — un vrai partenaire européen. Service premium.","ts.r2":"Category Manager · NordMeer GmbH",
+      "ts.q3":"Leurs crevettes panées marque propre sont dans 380 magasins. Qualité irréprochable.","ts.r3":"Responsable surgelés · Mercato Italia",
+      "ct.eyebrow":"Contactez-nous","ct.title":"Parlons de votre prochain conteneur.","ct.sub":"Envoyez-nous vos spécifications. Notre équipe européenne répond sous un jour ouvré.",
+      "ct.l1":"Bureau européen","ct.l2":"Ventes","ct.l3":"Téléphone",
+      "ct.f1":"Prénom","ct.f2":"Nom","ct.f3":"Email professionnel","ct.f4":"Société","ct.f5":"Pays","ct.f6":"Intéressé par","ct.f7":"Message","ct.send":"Envoyer la demande",
+      "ft.desc":"Exports de fruits de mer premium du golfe du Bengale vers les acheteurs européens les plus exigeants.",
+      "ft.h1":"Société","ft.h2":"Produits","ft.h3":"Contact","ft.rights":"Tous droits réservés."
+    },
+    es:{
+      "nav.products":"Productos","nav.why":"Por qué Fishnet","nav.process":"Proceso","nav.global":"Alcance global","nav.contact":"Contacto","nav.cta":"Solicitar oferta",
+      "hero.eyebrow":"Exportador premium de marisco · desde 2009","hero.title1":"De la Bahía de Bengala","hero.title2":"a las mejores mesas de Europa.","hero.lede":"Fishnet suministra gambas, pescado congelado y productos elaborados certificados HACCP y BRC a mayoristas, retailers y HORECA en toda la UE.","hero.cta1":"Iniciar pedido","hero.cta2":"Ver catálogo","hero.m1":"Países atendidos","hero.m2":"Toneladas / año","hero.m3":"Certificación global",
+      "marquee.label":"Confianza de importadores en",
+      "prod.eyebrow":"Nuestro catálogo","prod.title":"Marisco creado para mercados premium.","prod.sub":"De la gamba tigre salvaje al pescado pelágico ultracongelado — todo procesado bajo estrictas normas sanitarias europeas.",
+      "prod.t1":"Estrella · Captura salvaje","prod.n1":"Gamba Black Tiger","prod.d1":"Seleccionada a mano, IQF en menos de 6 h tras la captura. HLSO, PD y PUD.",
+      "prod.t2":"Congelado · IQF","prod.n2":"Filetes de pescado blanco","prod.d2":"Pangasius, hilsa y rohu — sin piel, sin espinas, al vacío.",
+      "prod.t3":"Elaborado","prod.n3":"Empanado y marinado","prod.d3":"Gambas empanadas listas para venta, filetes y brochetas marinadas con su marca.",
+      "prod.t4":"Especialidades","prod.n4":"Cangrejo y langosta","prod.d4":"Cangrejo de caparazón blando, clusters de cangrejo de fango y colas de langosta espinosa.",
+      "prod.t5":"Cefalópodos","prod.n5":"Calamar, sepia y pulpo","prod.d5":"Tubos limpios, anillas y ejemplares enteros — perfectos para la cocina mediterránea.",
+      "why.eyebrow":"Por qué Fishnet","why.title":"Un socio en el que los compradores europeos pueden confiar.","why.sub":"Tres décadas de experiencia costera con procesamiento moderno y trazabilidad obsesiva.",
+      "why.t1":"Certificaciones UE","why.d1":"BRCGS AA, IFS, HACCP, ASC, BAP y número de establecimiento UE EC-BD-145.",
+      "why.t2":"Trazabilidad total","why.d2":"Cada caja con QR trazable desde la granja o el barco hasta su muelle.",
+      "why.t3":"Puntualidad garantizada","why.d3":"99,4 % de envíos a tiempo con salidas semanales reefer a Rotterdam, Hamburgo y Algeciras.",
+      "why.t4":"Origen sostenible","why.d4":"Solo granjas y pesquerías certificadas ASC con cuotas estrictas y control de capturas accesorias.",
+      "why.t5":"Marca blanca y co-pack","why.d5":"Packaging a medida, cartones listos para tienda y desarrollo completo de marca blanca.",
+      "why.t6":"Oficina europea propia","why.d6":"Gerentes de cuenta en Rotterdam atienden a los compradores europeos en su zona horaria e idioma.",
+      "proc.eyebrow":"Cómo trabajamos","proc.title":"Del agua costera a su almacén.","proc.sub":"Un proceso transparente en cuatro pasos para importadores europeos exigentes.",
+      "proc.t1":"Captura selectiva","proc.d1":"Red de 240+ granjas verificadas y 12 buques que sólo suministran capturas que cumplen nuestros criterios.",
+      "proc.t2":"Procesamiento conforme UE","proc.d2":"Dos plantas BRC AA con túneles IQF y laboratorios QC que validan cada lote según EU 853/2004.",
+      "proc.t3":"Cadena de frío ininterrumpida","proc.d3":"Contenedores reefer a −18 °C salen semanalmente de Chittagong. Datos en tiempo real.",
+      "proc.t4":"DDP a sus instalaciones","proc.d4":"Gestionamos aduana UE, inspección veterinaria y entrega final — usted recibe producto perfecto.",
+      "glb.eyebrow":"Presencia global","glb.title":"Enviamos a 27 países, anclados en Europa.","glb.sub":"Desde nuestro hub europeo de Rotterdam servimos a retailers premium en la UE, Reino Unido y Escandinavia.",
+      "glb.s1":"Países activos","glb.s2":"Estados miembros UE","glb.s3":"Marítimo a Rotterdam","glb.s4":"Aéreo a cualquier capital UE",
+      "st.1":"Países atendidos","st.2":"Toneladas exportadas / año","st.3":"Envíos a tiempo","st.4":"Granjas verificadas",
+      "ts.eyebrow":"Lo que dicen nuestros socios","ts.title":"Elegidos por los compradores europeos más exigentes.",
+      "ts.q1":"Fishnet es nuestro proveedor de gambas más constante desde hace seis años. Documentación y embalaje impecables.","ts.r1":"Director de compras · Rotterdam Seafood Group",
+      "ts.q2":"De cotización a entrega DDP en Hamburgo — un verdadero socio europeo. Servicio premium.","ts.r2":"Category Manager · NordMeer GmbH",
+      "ts.q3":"Sus gambas empanadas de marca blanca están ya en 380 tiendas. Calidad impecable.","ts.r3":"Responsable de congelados · Mercato Italia",
+      "ct.eyebrow":"Contáctenos","ct.title":"Hablemos de su próximo contenedor.","ct.sub":"Envíenos sus especificaciones. Nuestro equipo europeo responde en un día laborable.",
+      "ct.l1":"Oficina europea","ct.l2":"Ventas","ct.l3":"Teléfono",
+      "ct.f1":"Nombre","ct.f2":"Apellido","ct.f3":"Email corporativo","ct.f4":"Empresa","ct.f5":"País","ct.f6":"Interesado en","ct.f7":"Mensaje","ct.send":"Enviar consulta",
+      "ft.desc":"Exportación premium de marisco desde la Bahía de Bengala a los compradores europeos más exigentes.",
+      "ft.h1":"Empresa","ft.h2":"Productos","ft.h3":"Contacto","ft.rights":"Todos los derechos reservados."
+    },
+    it:{
+      "nav.products":"Prodotti","nav.why":"Perché Fishnet","nav.process":"Processo","nav.global":"Presenza globale","nav.contact":"Contatti","nav.cta":"Richiedi preventivo",
+      "hero.eyebrow":"Esportatore premium di prodotti ittici · dal 2009","hero.title1":"Dal Golfo del Bengala","hero.title2":"alle migliori tavole d'Europa.","hero.lede":"Fishnet fornisce gamberi, pesce congelato e prodotti trasformati certificati HACCP e BRC a grossisti, retailer e HORECA in tutta l'UE.","hero.cta1":"Inizia il tuo ordine","hero.cta2":"Esplora il catalogo","hero.m1":"Paesi serviti","hero.m2":"Tonnellate / anno","hero.m3":"Certificato globale",
+      "marquee.label":"Scelti dagli importatori in",
+      "prod.eyebrow":"Il nostro catalogo","prod.title":"Prodotti ittici per mercati premium.","prod.sub":"Dai gamberi tigre selvaggi al pesce pelagico surgelato — tutto lavorato secondo i più rigorosi standard sanitari europei.",
+      "prod.t1":"Punta di diamante · Pesca selvaggia","prod.n1":"Gamberi Black Tiger","prod.d1":"Selezionati a mano, IQF entro 6 ore dalla cattura. Tagli HLSO, PD e PUD.",
+      "prod.t2":"Surgelato · IQF","prod.n2":"Filetti di pesce bianco","prod.d2":"Pangasio, hilsa e rohu — senza pelle, senza lische, sottovuoto.",
+      "prod.t3":"Trasformato","prod.n3":"Panato e marinato","prod.d3":"Gamberi panati pronti per la vendita, filetti e spiedini marinati a marchio cliente.",
+      "prod.t4":"Specialità","prod.n4":"Granchio e aragosta","prod.d4":"Granchi a guscio molle, cluster di granchio di palude e code di aragosta spinosa.",
+      "prod.t5":"Cefalopodi","prod.n5":"Calamaro, seppia e polpo","prod.d5":"Tubi puliti, anelli ed esemplari interi — perfetti per la cucina mediterranea.",
+      "why.eyebrow":"Perché Fishnet","why.title":"Un partner su cui gli acquirenti europei possono contare.","why.sub":"Trent'anni di esperienza costiera, lavorazione moderna e tracciabilità ossessiva.",
+      "why.t1":"Certificazioni UE","why.d1":"BRCGS AA, IFS, HACCP, ASC, BAP e numero stabilimento UE EC-BD-145.",
+      "why.t2":"Tracciabilità totale","why.d2":"Ogni cartone con QR tracciabile dall'allevamento o dal peschereccio fino alla vostra banchina.",
+      "why.t3":"Puntualità garantita","why.d3":"99,4% di spedizioni in orario con partenze reefer settimanali per Rotterdam, Amburgo e Algeciras.",
+      "why.t4":"Approvvigionamento sostenibile","why.d4":"Solo allevamenti e pesche certificate ASC con quote rigorose e controllo del bycatch.",
+      "why.t5":"Private label & co-pack","why.d5":"Packaging su misura, cartoni pronti per lo scaffale e sviluppo completo della marca privata.",
+      "why.t6":"Ufficio UE dedicato","why.d6":"I nostri account manager di Rotterdam servono i compratori europei nel loro fuso orario e lingua.",
+      "proc.eyebrow":"Come lavoriamo","proc.title":"Dall'acqua costiera al vostro magazzino.","proc.sub":"Un processo trasparente in quattro passaggi per importatori europei esigenti.",
+      "proc.t1":"Pesca selettiva","proc.d1":"Rete di 240+ allevamenti verificati e 12 pescherecci d'altura forniscono solo pescato conforme ai nostri criteri.",
+      "proc.t2":"Lavorazione UE","proc.d2":"Due stabilimenti BRC AA con tunnel IQF, linee di calibratura automatiche e laboratori QC conformi al Reg. UE 853/2004.",
+      "proc.t3":"Catena del freddo intatta","proc.d3":"Container reefer a −18 °C in partenza settimanale da Chittagong. Dati di temperatura in tempo reale.",
+      "proc.t4":"DDP fino al vostro stabilimento","proc.d4":"Gestiamo dogana UE, ispezione veterinaria e ultima miglia — voi ricevete prodotto perfetto.",
+      "glb.eyebrow":"Presenza globale","glb.title":"Spediamo in 27 paesi, ancorati in Europa.","glb.sub":"Dal nostro hub europeo di Rotterdam serviamo retailer premium in UE, UK e Scandinavia.",
+      "glb.s1":"Paesi attivi","glb.s2":"Stati membri UE","glb.s3":"Via mare a Rotterdam","glb.s4":"Via aerea a ogni capitale UE",
+      "st.1":"Paesi serviti","st.2":"Tonnellate esportate / anno","st.3":"Spedizioni in orario","st.4":"Allevamenti verificati",
+      "ts.eyebrow":"Cosa dicono i nostri partner","ts.title":"Scelti dai compratori europei più esigenti.",
+      "ts.q1":"Fishnet è il nostro fornitore di gamberi più costante da sei anni. Documentazione e imballaggio impeccabili.","ts.r1":"Direttore acquisti · Rotterdam Seafood Group",
+      "ts.q2":"Dal preventivo alla consegna DDP ad Amburgo — un vero partner europeo. Servizio premium.","ts.r2":"Category Manager · NordMeer GmbH",
+      "ts.q3":"I loro gamberi panati a marchio nostro sono in 380 punti vendita. Qualità impeccabile.","ts.r3":"Responsabile surgelati · Mercato Italia",
+      "ct.eyebrow":"Contattaci","ct.title":"Parliamo del tuo prossimo container.","ct.sub":"Inviaci le tue specifiche. Il nostro team europeo risponde entro un giorno lavorativo.",
+      "ct.l1":"Ufficio europeo","ct.l2":"Vendite","ct.l3":"Telefono",
+      "ct.f1":"Nome","ct.f2":"Cognome","ct.f3":"Email aziendale","ct.f4":"Azienda","ct.f5":"Paese","ct.f6":"Interessato a","ct.f7":"Messaggio","ct.send":"Invia richiesta",
+      "ft.desc":"Esportazione premium di prodotti ittici dal Golfo del Bengala ai compratori europei più esigenti.",
+      "ft.h1":"Azienda","ft.h2":"Prodotti","ft.h3":"Contatti","ft.rights":"Tutti i diritti riservati."
+    },
+    nl:{
+      "nav.products":"Producten","nav.why":"Waarom Fishnet","nav.process":"Proces","nav.global":"Wereldwijd","nav.contact":"Contact","nav.cta":"Offerte aanvragen",
+      "hero.eyebrow":"Premium zeevruchten-exporteur · sinds 2009","hero.title1":"Van de Golf van Bengalen","hero.title2":"naar Europa's beste tafels.","hero.lede":"Fishnet levert HACCP- en BRC-gecertificeerde garnalen, diepvriesvis en bewerkte zeevruchten aan groothandels, retailers en HORECA in de hele EU.","hero.cta1":"Start uw bestelling","hero.cta2":"Bekijk de catalogus","hero.m1":"Landen bediend","hero.m2":"Ton / jaar","hero.m3":"Wereldwijd gecertificeerd",
+      "marquee.label":"Vertrouwd door importeurs in",
+      "prod.eyebrow":"Onze catalogus","prod.title":"Zeevruchten voor premium markten.","prod.sub":"Van wildgevangen black-tigergarnalen tot diepgevroren pelagische vis — alles verwerkt volgens strikte EU-voedselveiligheidsnormen.",
+      "prod.t1":"Vlaggenschip · Wildvang","prod.n1":"Black Tiger Garnalen","prod.d1":"Met de hand geselecteerd, IQF-verwerkt binnen 6 uur na vangst. HLSO, PD en PUD.",
+      "prod.t2":"Diepgevroren · IQF","prod.n2":"Witvisfilets","prod.d2":"Pangasius-, hilsa- en rohu-filets — zonder huid, zonder graten, vacuüm.",
+      "prod.t3":"Bewerkt","prod.n3":"Gepaneerd & gemarineerd","prod.d3":"Verkoopklare gepaneerde garnalen, gemarineerde filets en spiezen onder uw merk.",
+      "prod.t4":"Specialiteiten","prod.n4":"Krab & kreeft","prod.d4":"Zachtschalige krab, modderkrab-clusters en spiny-lobster-staarten.",
+      "prod.t5":"Koppotigen","prod.n5":"Inktvis, sepia & octopus","prod.d5":"Schoongemaakte tubes, ringen en hele dieren — perfect voor mediterrane keuken.",
+      "why.eyebrow":"Waarom Fishnet","why.title":"Een partner waar Europese kopers op kunnen rekenen.","why.sub":"Drie decennia kustexpertise, moderne verwerking en compromisloze traceerbaarheid.",
+      "why.t1":"EU-certificeringen","why.d1":"BRCGS AA, IFS, HACCP, ASC, BAP en EU-erkenningsnummer EC-BD-145.",
+      "why.t2":"Volledige traceerbaarheid","why.d2":"Elke doos met QR traceerbaar van kwekerij of schip tot uw laadkade.",
+      "why.t3":"Op tijd, elke keer","why.d3":"99,4% op tijd geleverd met wekelijkse reefer-vertrekken naar Rotterdam, Hamburg en Algeciras.",
+      "why.t4":"Duurzame herkomst","why.d4":"Alleen ASC-gecertificeerde kwekerijen en visserijen met strikte quota en bijvangstcontrole.",
+      "why.t5":"Private label & co-pack","why.d5":"Maatwerkverpakking, schapklare dozen en volledige private-label ontwikkeling.",
+      "why.t6":"Eigen EU-kantoor","why.d6":"Lokale accountmanagers in Rotterdam bedienen Europese kopers in hun eigen tijdzone en taal.",
+      "proc.eyebrow":"Onze werkwijze","proc.title":"Van kustwater tot uw magazijn.","proc.sub":"Een transparant vierstappenproces voor veeleisende Europese importeurs.",
+      "proc.t1":"Selectieve oogst","proc.d1":"Netwerk van 240+ gekeurde kwekerijen en 12 diepzeeschepen levert alleen vangsten die aan onze criteria voldoen.",
+      "proc.t2":"EU-conforme verwerking","proc.d2":"Twee BRC AA-fabrieken met IQF-tunnels en QC-labs conform EU 853/2004.",
+      "proc.t3":"Onafgebroken koelketen","proc.d3":"Reefercontainers op −18 °C vertrekken wekelijks uit Chittagong. Realtime temperatuurdata.",
+      "proc.t4":"DDP tot uw locatie","proc.d4":"Wij regelen EU-douane, veterinaire keuring en de laatste mijl — u ontvangt simpelweg perfect product.",
+      "glb.eyebrow":"Wereldwijde aanwezigheid","glb.title":"Naar 27 landen, verankerd in Europa.","glb.sub":"Vanuit onze Europese hub Rotterdam bedienen wij premium retailers in EU, VK en Scandinavië.",
+      "glb.s1":"Actieve landen","glb.s2":"EU-lidstaten","glb.s3":"Zee naar Rotterdam","glb.s4":"Lucht naar elke EU-hoofdstad",
+      "st.1":"Landen bediend","st.2":"Ton geëxporteerd / jaar","st.3":"Op tijd geleverd","st.4":"Gekeurde kwekerijen",
+      "ts.eyebrow":"Wat onze partners zeggen","ts.title":"Gekozen door Europa's veeleisendste kopers.",
+      "ts.q1":"Fishnet is al zes jaar onze meest constante garnalenleverancier. Documentatie en verpakking onberispelijk.","ts.r1":"Inkoopdirecteur · Rotterdam Seafood Group",
+      "ts.q2":"Van offerte tot DDP-levering in Hamburg — een echte Europese partner. Premium service.","ts.r2":"Category Manager · NordMeer GmbH",
+      "ts.q3":"Hun private-label garnalen liggen nu in 380 winkels. Onberispelijke kwaliteit.","ts.r3":"Hoofd Diepvries · Mercato Italia",
+      "ct.eyebrow":"Neem contact op","ct.title":"Laten we uw volgende container bespreken.","ct.sub":"Stuur ons uw specificaties. Ons Europese team antwoordt binnen één werkdag.",
+      "ct.l1":"Europees kantoor","ct.l2":"Verkoop","ct.l3":"Telefoon",
+      "ct.f1":"Voornaam","ct.f2":"Achternaam","ct.f3":"Zakelijk e-mailadres","ct.f4":"Bedrijf","ct.f5":"Land","ct.f6":"Interesse in","ct.f7":"Bericht","ct.send":"Aanvraag verzenden",
+      "ft.desc":"Premium zeevruchten-export van de Golf van Bengalen naar de meest veeleisende kopers in Europa.",
+      "ft.h1":"Bedrijf","ft.h2":"Producten","ft.h3":"Contact","ft.rights":"Alle rechten voorbehouden."
+    }
+  };
+
+  const LANG_META={en:["🇬🇧","EN"],de:["🇩🇪","DE"],fr:["🇫🇷","FR"],es:["🇪🇸","ES"],it:["🇮🇹","IT"],nl:["🇳🇱","NL"]};
+  function setLang(l){
+    const dict=I18N[l]||I18N.en;
+    document.querySelectorAll("[data-i18n]").forEach(el=>{
+      const k=el.getAttribute("data-i18n");
+      if(dict[k]) el.textContent=dict[k];
+    });
+    const [flag,label]=LANG_META[l];
+    document.getElementById("langFlag").textContent=flag;
+    document.getElementById("langLabel").textContent=label;
+    document.querySelectorAll("#langMenu button").forEach(b=>b.classList.toggle("active",b.dataset.lang===l));
+    document.documentElement.lang=l;
+    try{localStorage.setItem("lang",l)}catch(e){}
+  }
+  document.getElementById("langBtn").addEventListener("click",e=>{e.stopPropagation();document.getElementById("lang").classList.toggle("open")});
+  document.addEventListener("click",()=>document.getElementById("lang").classList.remove("open"));
+  document.querySelectorAll("#langMenu button").forEach(b=>b.addEventListener("click",()=>{setLang(b.dataset.lang);document.getElementById("lang").classList.remove("open")}));
+  try{const saved=localStorage.getItem("lang");if(saved&&I18N[saved])setLang(saved)}catch(e){}
+
+  // Nav scroll
+  const nav=document.getElementById("nav");
+  window.addEventListener("scroll",()=>nav.classList.toggle("scrolled",window.scrollY>20));
+
+  // Mobile menu
+  document.getElementById("menuToggle").addEventListener("click",()=>document.getElementById("navLinks").classList.toggle("mobile-open"));
+  document.querySelectorAll("#navLinks a").forEach(a=>a.addEventListener("click",()=>document.getElementById("navLinks").classList.remove("mobile-open")));
+
+  // Reveal on scroll
+  const io=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}}),{threshold:.12});
+  document.querySelectorAll(".reveal").forEach(el=>io.observe(el));
+  // Timeline staggered reveal (retriggers on every scroll in/out)
+  const tio=new IntersectionObserver(entries=>entries.forEach(e=>{
+    if(e.isIntersecting){ e.target.classList.add("in-view"); }
+    else { e.target.classList.remove("in-view"); }
+  }),{threshold:.2});
+  document.querySelectorAll(".timeline").forEach(el=>tio.observe(el));
+
+
+  // Counters
+  const cio=new IntersectionObserver(entries=>entries.forEach(e=>{
+    if(!e.isIntersecting) return;
+    const el=e.target.querySelector("[data-count]");
+    if(!el||el.dataset.done) return;
+    el.dataset.done="1";
+    const target=parseInt(el.dataset.count,10);
+    const suffix=el.dataset.suffix||"";
+    const dur=1600;const start=performance.now();
+    function step(t){
+      const p=Math.min(1,(t-start)/dur);
+      const eased=1-Math.pow(1-p,3);
+      const val=Math.floor(target*eased);
+      el.textContent=val.toLocaleString()+suffix;
+      if(p<1) requestAnimationFrame(step);
+    }
+    requestAnimationFrame(step);
+    cio.unobserve(e.target);
+  }),{threshold:.4});
+  document.querySelectorAll(".stat").forEach(el=>cio.observe(el));
+
+  // Partner logos — stylized wordmarks (themed, demo)
+  // Each: [name, fontClass, iconSVG]
+  const icoFish = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12c3-5 8-6 12-6 4 0 6 2 6 2s-2 4-6 4c-4 0-9-1-12 0z"/><path d="M3 12c3 5 8 6 12 6 4 0 6-2 6-2"/><circle cx="17" cy="10.5" r=".8" fill="currentColor"/></svg>`;
+  const icoWave = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M2 9c3 0 3 3 6 3s3-3 6-3 3 3 6 3"/><path d="M2 15c3 0 3 3 6 3s3-3 6-3 3 3 6 3"/></svg>`;
+  const icoAnchor = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="5" r="2"/><path d="M12 7v14"/><path d="M5 17a7 7 0 0 0 14 0"/><path d="M8 11h8"/></svg>`;
+  const icoCrown = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M3 8l3 8h12l3-8-5 3-4-6-4 6z"/></svg>`;
+  const icoLeaf = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 19c0-8 6-14 14-14 0 8-6 14-14 14z"/><path d="M5 19c4-4 7-7 14-14"/></svg>`;
+  const icoShip = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l1.5 3h15L21 17"/><path d="M5 17V9l7-3 7 3v8"/><path d="M12 6V3"/></svg>`;
+  const icoGlobe = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"/></svg>`;
+  const icoDiamond = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M12 3l9 7-9 11L3 10z"/><path d="M3 10h18M9 10l3 11M15 10l-3 11"/></svg>`;
+
+  const partners=[
+    ["Nordsee", "", icoFish],
+    ["BLUE HARBOUR", "sans", icoAnchor],
+    ["Maris &amp; Co.", "", icoWave],
+    ["OCEANIQUE", "sans", icoCrown],
+    ["Køben Fish", "", icoFish],
+    ["LA MARÉE", "sans", icoWave],
+    ["Royal Atlantic", "", icoCrown],
+    ["FRESCOMAR", "sans", icoShip],
+    ["Hafen Bremen", "", icoAnchor],
+    ["GREENWAVE", "sans", icoLeaf],
+    ["Maison Pélagique", "", icoFish],
+    ["NORDPORT", "sans", icoShip],
+    ["Albamar Group", "", icoGlobe],
+    ["TIDEWAY EU", "sans", icoWave],
+    ["Lumen Mar", "", icoDiamond],
+  ];
+  const track=document.getElementById("marquee");
+  const html=partners.map(([n,c,svg])=>`<div class="partner-mark">${svg}<span class="pm-name ${c}">${n}</span></div>`).join("");
+  track.innerHTML=html+html;
+
+  // Certifications
+  const certs=[
+    "ASC Certified","MSC Chain of Custody","BRCGS Food Safety","IFS Food","HACCP","GLOBALG.A.P.","EU Approved Est.","SEDEX SMETA","Halal Certified"
+  ];
+  const certsEl=document.getElementById("certs");
+  if(certsEl){
+    certsEl.innerHTML=certs.map(c=>`<span class="cert-badge"><span class="dot"></span>${c}</span>`).join("");
+  }
+
+</script>
+</body>
+</html>
