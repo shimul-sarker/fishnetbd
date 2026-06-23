@@ -1,13 +1,24 @@
 <!DOCTYPE html><html lang="en"><head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Products — Fishnet</title>
-<meta name="description" content="Premium frozen seafood exports from Bangladesh — shrimp, white fish, crab, lobster, squid, cuttlefish and value-added products.">
+<title>Products — Full Catalogue · Fishnet</title>
+<meta name="description" content="Full catalogue of premium frozen seafood and meat exports — shrimp, fish, cephalopods, crab & lobster, value-added products and meat division.">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="icon" href="/fishnetbd/favicon.ico" sizes="any">
-<link rel="icon" type="image/png" sizes="32x32" href="/fishnetbd/images/fishnet-logo-icon.png">
-<link rel="apple-touch-icon" href="/fishnetbd/images/favicon-192.png">
-<link rel="stylesheet" href="/fishnetbd/fishnet.css">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/images/fishnet-logo-icon.png">
+<link rel="apple-touch-icon" href="/images/favicon-192.png">
+<link rel="stylesheet" href="/fishnet.css">
+<style>
+  .cat-nav{position:sticky;top:72px;z-index:40;background:var(--bg);border-bottom:1px solid var(--line);padding:14px 0;margin-bottom:8px}
+  .cat-nav-inner{display:flex;flex-wrap:wrap;gap:10px;justify-content:center}
+  .cat-chip{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;padding:8px 14px;border-radius:999px;border:1px solid var(--line);color:var(--ink-soft);text-decoration:none;transition:all .2s}
+  .cat-chip:hover{border-color:var(--teal-deep);color:var(--teal-deep);background:var(--bg-tint)}
+  .cat-section{padding:64px 0 24px;scroll-margin-top:140px}
+  .cat-header{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;margin-bottom:32px;flex-wrap:wrap}
+  .cat-header h2{margin:6px 0 0;font-size:clamp(28px,3.4vw,42px)}
+  .cat-header p{max-width:520px;color:var(--ink-soft);margin:0}
+  .cat-divider{height:1px;background:var(--line);margin:0}
+</style>
 <script>(function(){try{var t=localStorage.getItem("theme");if(t==="dark"){document.documentElement.setAttribute("data-theme","dark");}}catch(e){}})();</script>
 <script>(function(){document.documentElement.classList.add('pt-active');})();</script>
 </head><body>
@@ -15,18 +26,18 @@
 
 <nav class="nav" id="nav">
   <div class="wrap nav-inner">
-    <a href="/fishnetbd/" class="logo">
-      <span class="logo-mark logo-mark-img"><img src="/fishnetbd/images/fishnet-logo-icon.png" alt="Fishnet logo"/></span>
+    <a href="/" class="logo">
+      <span class="logo-mark logo-mark-img"><img src="/images/fishnet-logo-icon.png" alt="Fishnet logo"/></span>
       Fishnet
     </a>
     <ul class="nav-links" id="navLinks">
-      <li><a href="/fishnetbd/pages/products.html">Products</a></li>
-      <li><a href="/fishnetbd/pages/about.html">About</a></li>
-      <li><a href="/fishnetbd/pages/sustainability.html">Sustainability</a></li>
-      <li><a href="/fishnetbd/pages/certifications.html">Certifications</a></li>
-      <li><a href="/fishnetbd/pages/global-presence.html">Global Reach</a></li>
-      <li><a href="/fishnetbd/pages/contact.html">Contact</a></li>
-      <li class="btn-cta-mobile" style="display:none"><a href="/fishnetbd/pages/contact.html" class="btn btn-primary" style="width:100%;justify-content:center">Request Quote →</a></li>
+      <li><a href="/pages/products.html">Products</a></li>
+      <li><a href="/pages/about.html">About</a></li>
+      <li><a href="/pages/sustainability.html">Sustainability</a></li>
+      <li><a href="/pages/certifications.html">Certifications</a></li>
+      <li><a href="/pages/global-presence.html">Global Reach</a></li>
+      <li><a href="/pages/contact.html">Contact</a></li>
+      <li class="btn-cta-mobile" style="display:none"><a href="/pages/contact.html" class="btn btn-primary" style="width:100%;justify-content:center">Request Quote →</a></li>
     </ul>
     <div class="nav-right">
       <div class="lang" id="lang">
@@ -42,7 +53,7 @@
           <button data-lang="nl"><span class="flag">🇳🇱</span> Nederlands</button>
         </div>
       </div>
-      <a href="/fishnetbd/pages/contact.html" class="btn btn-primary">Request Quote
+      <a href="/pages/contact.html" class="btn btn-primary">Request Quote
         <svg class="arr" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
       </a>
       <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode"><svg class="icon-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><line x1="12" y1="2" x2="12" y2="4"/><line x1="12" y1="20" x2="12" y2="22"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="2" y1="12" x2="4" y2="12"/><line x1="20" y1="12" x2="22" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg><svg class="icon-moon" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></button>
@@ -55,88 +66,222 @@
 
 <section class="subhero">
   <div class="wrap">
-    <div class="breadcrumb"><a href="/fishnetbd/">Home</a><span>/</span>Products</div>
+    <div class="breadcrumb"><a href="/">Home</a><span>/</span>Products</div>
     <div class="hero-grid">
       <div class="reveal">
-        <span class="eyebrow">Our Catalogue</span>
-        <h1 style="margin-top:18px">Seafood crafted for <span style="font-style:italic;color:var(--teal-deep);font-weight:400">premium markets.</span></h1>
-        <p class="lede">From wild-caught black tiger shrimp to deep-frozen pelagic fish — every product is processed, packed and shipped under strict European food-safety standards.</p>
+        <span class="eyebrow">Full Catalogue</span>
+        <h1 style="margin-top:18px">Every product, <span style="font-style:italic;color:var(--teal-deep);font-weight:400">one catalogue.</span></h1>
+        <p class="lede">Shrimp, fish, cephalopods, crab &amp; lobster, value-added seafood and our meat division — all processed, packed and shipped under strict European food-safety standards.</p>
       </div>
-      <div class="hero-visual reveal"><img src="/fishnetbd/images/hero-seafood.jpg" alt="Fishnet seafood products"/></div>
+      <div class="hero-visual reveal"><img src="/images/hero-seafood.jpg" alt="Fishnet seafood products"/></div>
     </div>
   </div>
 </section>
 
-<section>
+<!-- Sticky category navigator -->
+<div class="cat-nav">
+  <div class="wrap cat-nav-inner">
+    <a class="cat-chip" href="#shrimp">Shrimp</a>
+    <a class="cat-chip" href="#fish">Fish</a>
+    <a class="cat-chip" href="#cephalopods">Cephalopods</a>
+    <a class="cat-chip" href="#crab-lobster">Crab &amp; Lobster</a>
+    <a class="cat-chip" href="#value-added">Value Added</a>
+    <a class="cat-chip" href="#other">Other Divisions</a>
+  </div>
+</div>
+
+<!-- SHRIMP -->
+<section class="cat-section" id="shrimp">
   <div class="wrap">
+    <div class="cat-header reveal">
+      <div><span class="eyebrow">Category 01</span><h2>Shrimp</h2></div>
+      <p>From estuarine wild-caught black tigers to farm-raised vannamei — graded, IQF processed and packed within six hours of harvest.</p>
+    </div>
     <div class="product-grid">
-      <a href="/fishnetbd/products/black-tiger-shrimp.html" class="product product-large reveal">
-        <img src="/fishnetbd/images/product-black-tiger-shrimp.jpg" alt="Black Tiger Shrimp" />
-        <div class="product-info">
-          <div class="tag">Flagship · Wild-caught</div>
-          <h3>Black Tiger Shrimp</h3>
-          <p>Hand-selected, IQF processed within 6 hours of catch. Available in HLSO, PD and PUD cuts.</p>
-        </div>
+      <a href="/products/black-tiger-shrimp.html" class="product product-large reveal">
+        <img src="/images/product-black-tiger-shrimp.jpg" alt="Black Tiger Shrimp" />
+        <div class="product-info"><div class="tag">Flagship · Wild-caught</div><h3>Black Tiger Shrimp</h3><p>Penaeus monodon — HLSO, PD, PUD and butterfly cuts. 6/8 to 31/40 grades.</p></div>
       </a>
-      <a href="/fishnetbd/products/white-fish-fillets.html" class="product reveal"><img src="/fishnetbd/images/product-white-fish.jpg" alt="Frozen White Fish" />
-        <div class="product-info">
-          <div class="tag">Frozen · IQF</div>
-          <h3>White Fish Fillets</h3>
-          <p>Pangasius, hilsa & rohu fillets — skinless, boneless, vacuum-sealed.</p>
-        </div>
+      <a href="/products/vannamei-white-shrimp.html" class="product reveal">
+        <img src="/images/product-vannamei.jpg" alt="Vannamei White Shrimp" />
+        <div class="product-info"><div class="tag">Farm-raised · ASC</div><h3>Vannamei White Shrimp</h3><p>Penaeus vannamei — shell-on, peeled, deveined. Consistent grading 21/25 to 71/90.</p></div>
       </a>
-      <a href="/fishnetbd/products/breaded-marinated.html" class="product reveal"><img src="/fishnetbd/images/product-breaded.jpg" alt="Value Added Seafood" />
-        <div class="product-info">
-          <div class="tag">Value-Added</div>
-          <h3>Breaded & Marinated</h3>
-          <p>Retail-ready breaded shrimp, marinated fillets and skewers under your brand.</p>
-        </div>
+      <a href="/products/freshwater-shrimp.html" class="product reveal">
+        <img src="/images/shrimp-3.jpg" alt="Freshwater Shrimp" />
+        <div class="product-info"><div class="tag">Sweet · River-raised</div><h3>Freshwater Shrimp</h3><p>Macrobrachium rosenbergii — large head-on prawns from the Padma delta.</p></div>
       </a>
-      <a href="/fishnetbd/products/crab-lobster.html" class="product reveal"><img src="/fishnetbd/images/product-crab-lobster.jpg" alt="Crab and Lobster" />
-        <div class="product-info">
-          <div class="tag">Specialty</div>
-          <h3>Crab & Lobster</h3>
-          <p>Soft-shell crab, mud crab clusters and spiny lobster tails.</p>
-        </div>
+      <a href="/products/seawater-shrimp.html" class="product reveal">
+        <img src="/images/shrimp-5.jpg" alt="Seawater Shrimp" />
+        <div class="product-info"><div class="tag">Wild · Bay of Bengal</div><h3>Seawater Shrimp</h3><p>Sea tiger and brown shrimp — block-frozen and IQF, EU-spec packed.</p></div>
       </a>
-      <a href="/fishnetbd/pages/about.html" class="product brand-card reveal" style="background:linear-gradient(160deg,#0F766E 0%,#0D9488 55%,#14B8A6 100%);">
+    </div>
+  </div>
+</section>
+
+<div class="wrap"><div class="cat-divider"></div></div>
+
+<!-- FISH -->
+<section class="cat-section" id="fish">
+  <div class="wrap">
+    <div class="cat-header reveal">
+      <div><span class="eyebrow">Category 02</span><h2>Fish</h2></div>
+      <p>Pangasius, tilapia, hilsa, barramundi and pelagic species — fillets, steaks, whole round and HGT formats. Skinless, boneless, vacuum-sealed.</p>
+    </div>
+    <div class="product-grid">
+      <a href="/products/white-fish-fillets.html" class="product product-large reveal">
+        <img src="/images/product-white-fish.jpg" alt="White Fish Fillets" />
+        <div class="product-info"><div class="tag">Frozen · IQF</div><h3>White Fish Fillets</h3><p>Premium fillets — skinless, boneless, vacuum-sealed for HORECA and retail.</p></div>
+      </a>
+      <a href="/products/pangasius-tilapia.html" class="product reveal">
+        <img src="/images/whitefish-2.jpg" alt="Pangasius & Tilapia" />
+        <div class="product-info"><div class="tag">Aquaculture · BAP</div><h3>Pangasius &amp; Tilapia</h3><p>Well-trimmed fillets — CO-treated or untreated, glazing 10–30% to spec.</p></div>
+      </a>
+      <a href="/products/freshwater-fish.html" class="product reveal">
+        <img src="/images/product-hilsa.jpg" alt="Freshwater Fish — Hilsa" />
+        <div class="product-info"><div class="tag">Signature · Hilsa</div><h3>Freshwater Fish</h3><p>Wild hilsa, rohu, katla, pabda — whole round, individually wrapped.</p></div>
+      </a>
+      <a href="/products/seawater-fish.html" class="product reveal">
+        <img src="/images/whitefish-5.jpg" alt="Seawater Fish — Barramundi & Pelagic" />
+        <div class="product-info"><div class="tag">Wild-caught</div><h3>Seawater Fish</h3><p>Barramundi, mackerel, sardines, ribbonfish — flash-frozen at peak freshness.</p></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<div class="wrap"><div class="cat-divider"></div></div>
+
+<!-- CEPHALOPODS -->
+<section class="cat-section" id="cephalopods">
+  <div class="wrap">
+    <div class="cat-header reveal">
+      <div><span class="eyebrow">Category 03</span><h2>Cephalopods</h2></div>
+      <p>Squid, cuttlefish and octopus — cleaned tubes, rings, T+T and whole specimens. Perfect for Mediterranean and Asian cuisine.</p>
+    </div>
+    <div class="product-grid">
+      <a href="/products/squid-cuttlefish.html" class="product product-large reveal">
+        <img src="/images/squid-hero.jpg" alt="Squid, Cuttlefish & Octopus" />
+        <div class="product-info"><div class="tag">Cephalopods</div><h3>Squid, Cuttlefish &amp; Octopus</h3><p>Cleaned tubes, rings, whole — multiple size grades available.</p></div>
+      </a>
+      <a href="/products/squid-cuttlefish.html#squid" class="product reveal">
+        <img src="/images/squid-2.jpg" alt="Squid Rings & Tubes" />
+        <div class="product-info"><div class="tag">Loligo · Illex</div><h3>Squid Rings &amp; Tubes</h3><p>U2, U3, U5, U7 — IQF or block, calibrated to retail and HORECA specs.</p></div>
+      </a>
+      <a href="/products/squid-cuttlefish.html#cuttlefish" class="product reveal">
+        <img src="/images/squid-4.jpg" alt="Cuttlefish" />
+        <div class="product-info"><div class="tag">Sepia</div><h3>Cuttlefish</h3><p>Whole cleaned (W/C), T+T (tentacles + tubes) — premium Mediterranean grade.</p></div>
+      </a>
+      <a href="/products/squid-cuttlefish.html#octopus" class="product reveal">
+        <img src="/images/squid-6.jpg" alt="Octopus" />
+        <div class="product-info"><div class="tag">Octopus vulgaris</div><h3>Octopus</h3><p>Whole cleaned baby octopus and double-skin grades, 300g–2kg.</p></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<div class="wrap"><div class="cat-divider"></div></div>
+
+<!-- CRAB & LOBSTER -->
+<section class="cat-section" id="crab-lobster">
+  <div class="wrap">
+    <div class="cat-header reveal">
+      <div><span class="eyebrow">Category 04</span><h2>Crab &amp; Lobster</h2></div>
+      <p>Soft-shell crab, mud crab clusters, swimming crab meat and spiny lobster tails — coastal Bangladesh and Indo-Pacific sourcing.</p>
+    </div>
+    <div class="product-grid">
+      <a href="/products/crab-lobster.html" class="product product-large reveal">
+        <img src="/images/product-crab-lobster.jpg" alt="Crab and Lobster" />
+        <div class="product-info"><div class="tag">Specialty</div><h3>Crab &amp; Lobster</h3><p>Soft-shell crab, mud crab clusters and spiny lobster tails.</p></div>
+      </a>
+      <a href="/products/crab-lobster.html#mud" class="product reveal">
+        <img src="/images/crab-2.jpg" alt="Mud Crab" />
+        <div class="product-info"><div class="tag">Scylla serrata</div><h3>Mud Crab</h3><p>Live and frozen — graded by gender and weight 300g–1kg+.</p></div>
+      </a>
+      <a href="/products/crab-lobster.html#soft" class="product reveal">
+        <img src="/images/crab-4.jpg" alt="Soft Shell Crab" />
+        <div class="product-info"><div class="tag">Soft-shell</div><h3>Soft Shell Crab</h3><p>IQF cleaned soft-shell — ready-to-cook, multiple sizes XS to JU.</p></div>
+      </a>
+      <a href="/products/crab-lobster.html#lobster" class="product reveal">
+        <img src="/images/crab-6.jpg" alt="Lobster" />
+        <div class="product-info"><div class="tag">Panulirus</div><h3>Lobster Tails</h3><p>Spiny lobster — raw or cooked tails, premium European retail grade.</p></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<div class="wrap"><div class="cat-divider"></div></div>
+
+<!-- VALUE ADDED -->
+<section class="cat-section" id="value-added">
+  <div class="wrap">
+    <div class="cat-header reveal">
+      <div><span class="eyebrow">Category 05</span><h2>Value Added Products</h2></div>
+      <p>Retail-ready breaded shrimp, marinated fillets, skewers and ready-to-cook portions under your private label.</p>
+    </div>
+    <div class="product-grid">
+      <a href="/products/breaded-marinated.html" class="product product-large reveal">
+        <img src="/images/product-breaded.jpg" alt="Breaded & Marinated" />
+        <div class="product-info"><div class="tag">Value-Added</div><h3>Breaded &amp; Marinated</h3><p>Retail-ready breaded shrimp, marinated fillets and skewers under your brand.</p></div>
+      </a>
+      <a href="/products/breaded-marinated.html#breaded" class="product reveal">
+        <img src="/images/breaded-2.jpg" alt="Breaded Shrimp" />
+        <div class="product-info"><div class="tag">Crunchy coating</div><h3>Breaded Shrimp</h3><p>Butterfly and round-tail breaded shrimp — Japanese panko or batter coatings.</p></div>
+      </a>
+      <a href="/products/breaded-marinated.html#marinated" class="product reveal">
+        <img src="/images/breaded-4.jpg" alt="Marinated Fillets" />
+        <div class="product-info"><div class="tag">Ready-to-cook</div><h3>Marinated Fillets</h3><p>Lemon-herb, garlic, teriyaki — fillets and steaks pre-marinated to your recipe.</p></div>
+      </a>
+      <a href="/products/breaded-marinated.html#skewers" class="product reveal">
+        <img src="/images/breaded-6.jpg" alt="Seafood Skewers" />
+        <div class="product-info"><div class="tag">HORECA-ready</div><h3>Seafood Skewers</h3><p>Mixed seafood skewers — shrimp, squid, fish — portion-controlled and IQF.</p></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<div class="wrap"><div class="cat-divider"></div></div>
+
+<!-- OTHER -->
+<section class="cat-section" id="other">
+  <div class="wrap">
+    <div class="cat-header reveal">
+      <div><span class="eyebrow">Category 06</span><h2>Other Divisions</h2></div>
+      <p>Miscellaneous specialties and our dedicated meat division — frog legs, premium meat cuts and bespoke sourcing programmes.</p>
+    </div>
+    <div class="product-grid">
+      <a href="/products/frog-legs.html" class="product reveal">
+        <img src="/images/product-frog-legs.jpg" alt="Frog Legs" />
+        <div class="product-info"><div class="tag">Speciality</div><h3>Frog Legs</h3><p>Cleaned and IQF frog legs — premium grade for French and Asian markets.</p></div>
+      </a>
+      <a href="/products/miscellaneous.html" class="product reveal">
+        <img src="/images/whitefish-6.jpg" alt="Miscellaneous Seafood" />
+        <div class="product-info"><div class="tag">Bespoke</div><h3>Miscellaneous Seafood</h3><p>Eel, clam meat, crayfish and other specialty items — sourced on request.</p></div>
+      </a>
+      <a href="/products/meat-division.html" class="product reveal">
+        <img src="/images/product-meat.jpg" alt="Meat Division" />
+        <div class="product-info"><div class="tag">Meat Division</div><h3>Premium Meat Cuts</h3><p>Beef, lamb and poultry — Halal-certified, vacuum packed, EU-spec carton.</p></div>
+      </a>
+      <a href="/pages/about.html" class="product brand-card reveal" style="background:linear-gradient(160deg,#0F766E 0%,#0D9488 55%,#14B8A6 100%);">
         <div class="brand-card-inner">
           <div class="brand-top">
             <div class="brand-mark">F.</div>
             <div class="tag" style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.16em;text-transform:uppercase;opacity:.7;color:#fff">Est. 2010</div>
           </div>
-          <h3 class="brand-quote">"From the Bay of Bengal to global kitchens — traceable, sustainable, uncompromised."</h3>
+          <h3 class="brand-quote">"Can't find what you need? Tell us — we source bespoke programmes for European buyers."</h3>
           <div class="brand-foot">
             <div class="brand-certs">HACCP · BRC · BAP · ASC · HALAL</div>
-            <span class="brand-cta">Our Story <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+            <span class="brand-cta">Talk to us <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
           </div>
-        </div>
-      </a>
-      <a href="/fishnetbd/products/squid-cuttlefish.html" class="product product-large reveal">
-        <img src="/fishnetbd/images/squid-hero.jpg" alt="Squid, Cuttlefish & Octopus" />
-        <div class="product-info">
-          <div class="tag">Cephalopods</div>
-          <h3>Squid, Cuttlefish & Octopus</h3>
-          <p>Cleaned tubes, rings and whole specimens — perfect for Mediterranean cuisine.</p>
-        </div>
-      </a>
-      <a href="/fishnetbd/products/white-fish-fillets.html" class="product reveal">
-        <img src="/fishnetbd/images/hero-seafood.jpg" alt="Hilsa & Pelagic Fish" />
-        <div class="product-info">
-          <div class="tag">Signature · Bay of Bengal</div>
-          <h3>Hilsa & Pelagic Fish</h3>
-          <p>Wild-caught hilsa, mackerel and sardines — flash-frozen at peak freshness.</p>
         </div>
       </a>
     </div>
   </div>
 </section>
 
-<section style="background:var(--bg-tint)">
+<section style="background:var(--bg-tint);margin-top:64px">
   <div class="wrap">
-    <div class="section-head reveal"><span class="eyebrow">Need something specific?</span><h2 style="margin-top:18px">Private label & custom specifications available.</h2><p>Tell us your volumes, packaging and target delivery month — our team replies within one business day.</p></div>
+    <div class="section-head reveal"><span class="eyebrow">Need something specific?</span><h2 style="margin-top:18px">Private label &amp; custom specifications available.</h2><p>Tell us your volumes, packaging and target delivery month — our team replies within one business day.</p></div>
     <div style="text-align:center;margin-top:32px">
-      <a href="/fishnetbd/pages/contact.html" class="btn btn-primary">Request a quote
+      <a href="/pages/contact.html" class="btn btn-primary">Request a quote
         <svg class="arr" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
       </a>
     </div>
@@ -147,17 +292,17 @@
   <div class="wrap">
     <div class="foot-grid">
       <div>
-        <a href="/fishnetbd/" class="logo"><span class="partner-mark partner-mark-img"><img src="/fishnetbd/images/fishnet-logo-icon.png" alt="Fishnet logo"/></span>Fishnet</a>
+        <a href="/" class="logo"><span class="partner-mark partner-mark-img"><img src="/images/fishnet-logo-icon.png" alt="Fishnet logo"/></span>Fishnet</a>
         <p>Premium seafood exports from the Bay of Bengal to the world's most discerning buyers. BAP &amp; BRC certified. Sustainably sourced. Reliably delivered.</p>
       </div>
       <div class="foot-col"><h4>Company</h4>
-        <a href="/fishnetbd/pages/about.html">About</a><a href="/fishnetbd/pages/sustainability.html">Sustainability</a><a href="/fishnetbd/pages/global-presence.html">Global reach</a><a href="/fishnetbd/pages/news.html">News</a>
+        <a href="/pages/about.html">About</a><a href="/pages/sustainability.html">Sustainability</a><a href="/pages/global-presence.html">Global reach</a><a href="/pages/news.html">News</a>
       </div>
       <div class="foot-col"><h4>Products</h4>
-        <a href="/fishnetbd/products/black-tiger-shrimp.html">Black Tiger Shrimp</a><a href="/fishnetbd/products/white-fish-fillets.html">White Fish</a><a href="/fishnetbd/products/breaded-marinated.html">Value-added</a><a href="/fishnetbd/products/crab-lobster.html">Crab & Lobster</a>
+        <a href="/pages/products.html">Full catalogue</a><a href="/products/black-tiger-shrimp.html">Black Tiger Shrimp</a><a href="/products/white-fish-fillets.html">White Fish</a><a href="/products/squid-cuttlefish.html">Cephalopods</a>
       </div>
       <div class="foot-col"><h4>Contact</h4>
-        <a href="mailto:sales@fishnetbd.com">sales@fishnetbd.com</a><a href="tel:+88041721010">+88041721010</a><a href="/fishnetbd/pages/contact.html">Khulna, BD</a>
+        <a href="mailto:sales@fishnetbd.com">sales@fishnetbd.com</a><a href="tel:+88041721010">+88041721010</a><a href="/pages/contact.html">Khulna, BD</a>
       </div>
     </div>
     <div class="foot-bot">
@@ -177,7 +322,6 @@ document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
 document.getElementById('menuToggle').addEventListener('click',()=>document.getElementById('navLinks').classList.toggle('mobile-open'));
 document.querySelectorAll('#navLinks a').forEach(a=>a.addEventListener('click',()=>document.getElementById('navLinks').classList.remove('mobile-open')));
 
-  // Language switcher (UI-only on this page; full translations live on the homepage)
   (function(){
     const LANG_META={en:["🇬🇧","EN"],de:["🇩🇪","DE"],fr:["🇫🇷","FR"],es:["🇪🇸","ES"],it:["🇮🇹","IT"],nl:["🇳🇱","NL"]};
     const langEl=document.getElementById('lang');
@@ -197,8 +341,6 @@ document.querySelectorAll('#navLinks a').forEach(a=>a.addEventListener('click',(
     try{const saved=localStorage.getItem('lang');if(saved&&LANG_META[saved])applyLang(saved)}catch(e){}
   })();
 
-
-  // Dark mode toggle
   (function(){
     const root=document.documentElement;
     const btn=document.getElementById('themeToggle');
@@ -215,23 +357,12 @@ document.querySelectorAll('#navLinks a').forEach(a=>a.addEventListener('click',(
 (function(){
   var html = document.documentElement;
   var overlay = document.getElementById('pt-overlay');
-
   function reveal(){
     html.classList.remove('pt-active');
-    requestAnimationFrame(function(){
-      requestAnimationFrame(function(){
-        overlay.classList.remove('pt-show');
-      });
-    });
+    requestAnimationFrame(function(){ requestAnimationFrame(function(){ overlay.classList.remove('pt-show'); }); });
   }
   if(document.readyState === 'complete'){ reveal(); }
   else{ window.addEventListener('load', reveal); }
-
-  function isSameOrigin(url){
-    try{ return new URL(url, location.href).origin === location.origin; }
-    catch(e){ return false; }
-  }
-
   document.addEventListener('click', function(e){
     if(e.defaultPrevented || e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
     var a = e.target.closest('a[href]');
@@ -239,38 +370,24 @@ document.querySelectorAll('#navLinks a').forEach(a=>a.addEventListener('click',(
     var href = a.getAttribute('href');
     if(!href || href.charAt(0) === '#' || href.indexOf('mailto:') === 0 || href.indexOf('tel:') === 0) return;
     if(a.target && a.target !== '' && a.target !== '_self') return;
-    if(!isSameOrigin(href)) return;
+    try{ if(new URL(href, location.href).origin !== location.origin) return; }catch(e){ return; }
     var dest = new URL(href, location.href);
     if(dest.href.split('#')[0] === location.href.split('#')[0]) return;
-
-    
-    
     location.href = dest.href;
   });
-
   window.addEventListener('pageshow', function(ev){
-    if(ev.persisted){
-      html.classList.remove('pt-active');
-      overlay.classList.remove('pt-show');
-    }
+    if(ev.persisted){ html.classList.remove('pt-active'); overlay.classList.remove('pt-show'); }
   });
 })();
 </script>
 <script>
 (function(){
   var current = location.pathname.replace(/\/index\.html$/, '/');
-  var isProductDetail = /\/products\//.test(current);
-
   document.querySelectorAll('#navLinks > li > a').forEach(function(a){
     if(a.classList.contains('btn')) return;
     var href = a.getAttribute('href');
     if(!href || href.charAt(0) === '#') return;
-    var linkPath = href.split('#')[0];
-
-    var isMatch = (linkPath === current) ||
-      (isProductDetail && /\/pages\/products\.html$/.test(linkPath));
-
-    if(isMatch) a.classList.add('active');
+    if(href.split('#')[0] === current) a.classList.add('active');
   });
 })();
 </script>
