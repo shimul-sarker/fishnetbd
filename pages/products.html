@@ -11,6 +11,11 @@
 <style>
   .cat-nav{position:sticky;top:72px;z-index:40;background:var(--bg);border-bottom:1px solid var(--line);padding:14px 0;margin-bottom:8px}
   .cat-nav-inner{display:flex;flex-wrap:wrap;gap:10px;justify-content:center}
+  @media(max-width:768px){
+    .subhero{padding:90px 0 16px !important}
+    .hero-visual{display:none}
+    .cat-nav{top:64px;margin-bottom:0}
+  }
   .cat-chip{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;padding:8px 14px;border-radius:999px;border:1px solid var(--line);color:var(--ink-soft);text-decoration:none;transition:all .2s}
   .cat-chip:hover{border-color:var(--teal-deep);color:var(--teal-deep);background:var(--bg-tint)}
   .cat-section{padding:64px 0 24px;scroll-margin-top:140px}
@@ -28,7 +33,7 @@
 
 <nav class="nav" id="nav">
   <div class="wrap nav-inner">
-    <a href="/" class="logo">
+    <a href="/fishnetbd/index.html" class="logo">
       <span class="logo-mark logo-mark-img"><img src="/fishnetbd/images/fishnet-logo-icon.png" alt="Fishnet logo"/></span>
       Fishnet
     </a>
@@ -282,7 +287,7 @@
   <div class="wrap">
     <div class="foot-grid">
       <div>
-        <a href="/" class="logo"><span class="partner-mark partner-mark-img"><img src="/fishnetbd/images/fishnet-logo-icon.png" alt="Fishnet logo"/></span>Fishnet</a>
+        <a href="/fishnetbd/index.html" class="logo"><span class="partner-mark partner-mark-img"><img src="/fishnetbd/images/fishnet-logo-icon.png" alt="Fishnet logo"/></span>Fishnet</a>
         <p>Premium seafood exports from the Bay of Bengal to the world's most discerning buyers. BAP &amp; BRC certified. Sustainably sourced. Reliably delivered.</p>
       </div>
       <div class="foot-col"><h4>Company</h4>
