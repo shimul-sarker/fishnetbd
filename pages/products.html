@@ -14,9 +14,11 @@
   .cat-chip{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;padding:8px 14px;border-radius:999px;border:1px solid var(--line);color:var(--ink-soft);text-decoration:none;transition:all .2s}
   .cat-chip:hover{border-color:var(--teal-deep);color:var(--teal-deep);background:var(--bg-tint)}
   .cat-section{padding:64px 0 24px;scroll-margin-top:140px}
-  .cat-header{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;margin-bottom:32px;flex-wrap:wrap}
+  .cat-header{display:flex;align-items:center;gap:0;margin-bottom:32px;flex-wrap:wrap}
   .cat-header h2{margin:6px 0 0;font-size:clamp(28px,3.4vw,42px)}
-  .cat-header p{max-width:520px;color:var(--ink-soft);margin:0}
+  .cat-header-left{flex-shrink:0}
+  .cat-header-divider{width:1px;height:52px;background:var(--line);margin:0 28px;flex-shrink:0}
+  .cat-header p{max-width:420px;color:var(--ink-soft);margin:0;font-size:15px;line-height:1.55}
   .cat-divider{height:1px;background:var(--line);margin:0}
 </style>
 <script>(function(){try{var t=localStorage.getItem("theme");if(t==="dark"){document.documentElement.setAttribute("data-theme","dark");}}catch(e){}})();</script>
@@ -94,7 +96,7 @@
 <section class="cat-section" id="shrimp">
   <div class="wrap">
     <div class="cat-header reveal">
-      <div><span class="eyebrow">Category 01</span><h2>Shrimp</h2></div>
+      <div class="cat-header-left"><span class="eyebrow">Category 01</span><h2>Shrimp</h2></div><div class="cat-header-divider"></div>
       <p>From estuarine wild-caught black tigers to farm-raised vannamei — graded, IQF processed and packed within six hours of harvest.</p>
     </div>
     <div class="product-grid">
@@ -124,7 +126,7 @@
 <section class="cat-section" id="fish">
   <div class="wrap">
     <div class="cat-header reveal">
-      <div><span class="eyebrow">Category 02</span><h2>Fish</h2></div>
+      <div class="cat-header-left"><span class="eyebrow">Category 02</span><h2>Fish</h2></div><div class="cat-header-divider"></div>
       <p>Pangasius, tilapia, hilsa, barramundi and pelagic species — fillets, steaks, whole round and HGT formats. Skinless, boneless, vacuum-sealed.</p>
     </div>
     <div class="product-grid">
@@ -154,7 +156,7 @@
 <section class="cat-section" id="cephalopods">
   <div class="wrap">
     <div class="cat-header reveal">
-      <div><span class="eyebrow">Category 03</span><h2>Cephalopods</h2></div>
+      <div class="cat-header-left"><span class="eyebrow">Category 03</span><h2>Cephalopods</h2></div><div class="cat-header-divider"></div>
       <p>Squid, cuttlefish and octopus — cleaned tubes, rings, T+T and whole specimens. Perfect for Mediterranean and Asian cuisine.</p>
     </div>
     <div class="product-grid">
@@ -184,7 +186,7 @@
 <section class="cat-section" id="crab-lobster">
   <div class="wrap">
     <div class="cat-header reveal">
-      <div><span class="eyebrow">Category 04</span><h2>Crab &amp; Lobster</h2></div>
+      <div class="cat-header-left"><span class="eyebrow">Category 04</span><h2>Crab &amp; Lobster</h2></div><div class="cat-header-divider"></div>
       <p>Soft-shell crab, mud crab clusters, swimming crab meat and spiny lobster tails — coastal Bangladesh and Indo-Pacific sourcing.</p>
     </div>
     <div class="product-grid">
@@ -214,7 +216,7 @@
 <section class="cat-section" id="value-added">
   <div class="wrap">
     <div class="cat-header reveal">
-      <div><span class="eyebrow">Category 05</span><h2>Value Added Products</h2></div>
+      <div class="cat-header-left"><span class="eyebrow">Category 05</span><h2>Value Added Products</h2></div><div class="cat-header-divider"></div>
       <p>Retail-ready breaded shrimp, marinated fillets, skewers and ready-to-cook portions under your private label.</p>
     </div>
     <div class="product-grid">
@@ -244,7 +246,7 @@
 <section class="cat-section" id="other">
   <div class="wrap">
     <div class="cat-header reveal">
-      <div><span class="eyebrow">Category 06</span><h2>Other Divisions</h2></div>
+      <div class="cat-header-left"><span class="eyebrow">Category 06</span><h2>Other Divisions</h2></div><div class="cat-header-divider"></div>
       <p>Miscellaneous specialties and our dedicated meat division — frog legs, premium meat cuts and bespoke sourcing programmes.</p>
     </div>
     <div class="product-grid">
@@ -260,19 +262,7 @@
         <img src="/fishnetbd/images/product-meat.jpg" alt="Meat Division" />
         <div class="product-info"><div class="tag">Meat Division</div><h3>Premium Meat Cuts</h3><p>Beef, lamb and poultry — Halal-certified, vacuum packed, EU-spec carton.</p></div>
       </a>
-      <a href="/fishnetbd/pages/about.html" class="product brand-card reveal" style="background:linear-gradient(160deg,#0F766E 0%,#0D9488 55%,#14B8A6 100%);">
-        <div class="brand-card-inner">
-          <div class="brand-top">
-            <div class="brand-mark">F.</div>
-            <div class="tag" style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.16em;text-transform:uppercase;opacity:.7;color:#fff">Est. 2010</div>
-          </div>
-          <h3 class="brand-quote">"Can't find what you need? Tell us — we source bespoke programmes for European buyers."</h3>
-          <div class="brand-foot">
-            <div class="brand-certs">HACCP · BRC · BAP · ASC · HALAL</div>
-            <span class="brand-cta">Talk to us <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
-          </div>
-        </div>
-      </a>
+
     </div>
   </div>
 </section>
