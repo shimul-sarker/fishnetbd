@@ -6,7 +6,10 @@
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/fishnetbd/fishnet.css">
 <script>(function(){try{var t=localStorage.getItem("theme");if(t==="dark"){document.documentElement.setAttribute("data-theme","dark");}}catch(e){}})();</script>
+<script>(function(){document.documentElement.classList.add('pt-active');})();</script>
 </head><body>
+<div id="pt-overlay" class="pt-show"><span class="pt-mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12c3-4 7-4 9 0s6 4 9 0"/><path d="M3 18c3-4 7-4 9 0s6 4 9 0"/></svg></span></div>
+
 <nav class="nav" id="nav">
   <div class="wrap nav-inner">
     <a href="/fishnetbd/" class="logo">
@@ -163,5 +166,68 @@ document.querySelectorAll('#navLinks a').forEach(a=>a.addEventListener('click',(
       else{ root.setAttribute('data-theme','dark'); localStorage.setItem('theme','dark'); }
     });
   })();
+</script>
+<script>
+(function(){
+  var html = document.documentElement;
+  var overlay = document.getElementById('pt-overlay');
+
+  function reveal(){
+    html.classList.remove('pt-active');
+    requestAnimationFrame(function(){
+      requestAnimationFrame(function(){
+        overlay.classList.remove('pt-show');
+      });
+    });
+  }
+  if(document.readyState === 'complete'){ reveal(); }
+  else{ window.addEventListener('load', reveal); }
+
+  function isSameOrigin(url){
+    try{ return new URL(url, location.href).origin === location.origin; }
+    catch(e){ return false; }
+  }
+
+  document.addEventListener('click', function(e){
+    if(e.defaultPrevented || e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+    var a = e.target.closest('a[href]');
+    if(!a) return;
+    var href = a.getAttribute('href');
+    if(!href || href.charAt(0) === '#' || href.indexOf('mailto:') === 0 || href.indexOf('tel:') === 0) return;
+    if(a.target && a.target !== '' && a.target !== '_self') return;
+    if(!isSameOrigin(href)) return;
+    var dest = new URL(href, location.href);
+    if(dest.href.split('#')[0] === location.href.split('#')[0]) return;
+
+    e.preventDefault();
+    overlay.classList.add('pt-show');
+    setTimeout(function(){ location.href = dest.href; }, 280);
+  });
+
+  window.addEventListener('pageshow', function(ev){
+    if(ev.persisted){
+      html.classList.remove('pt-active');
+      overlay.classList.remove('pt-show');
+    }
+  });
+})();
+</script>
+<script>
+(function(){
+  var current = location.pathname.replace(/\/index\.html$/, '/');
+  var isProductDetail = /\/products\//.test(current);
+
+  document.querySelectorAll('#navLinks > li > a').forEach(function(a){
+    if(a.classList.contains('btn')) return;
+    var href = a.getAttribute('href');
+    if(!href || href.charAt(0) === '#') return;
+    var linkPath = href.split('#')[0];
+
+    var isMatch = (linkPath === current) ||
+      (isProductDetail && /\/pages\/products\.html$/.test(linkPath));
+
+    if(isMatch) a.classList.add('active');
+  });
+})();
 </script>
 </body></html>
